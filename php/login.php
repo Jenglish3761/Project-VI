@@ -4,7 +4,7 @@ $submitted = !empty($_post);
 
 <!DOCTYPE html>
 <html>
-  <head> <title>Form Handler Page</tilte></head>
+  <head> <title>Form Handler Page</title></head>
   <body>
     <p>Form submitted?<?php echo (int) $submitted; ?> </p>
     <p>Your login info is: </p>
