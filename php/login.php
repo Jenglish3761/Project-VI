@@ -1,5 +1,5 @@
 <?php
-$submitted = !empty($_post);
+$submitted = !empty($_POST);
 ?>
 
 <!DOCTYPE html>
