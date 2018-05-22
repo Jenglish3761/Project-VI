@@ -11,3 +11,27 @@
 	margin-right: auto;
 	padding: 10px;
 }
+
+/* IMG qualities */
+
+img.scaled{
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	display: block;
+	border: 2px solid blue;
+	box-shadow: 10px 10px 5px gray;	
+}
+
+figure{	
+	border: 2px solid green;
+	border-radius: 25px;
+	margin: auto;
+	padding: 0.5em;
+}
+
+figcaption{	
+	font-style: italic;
+	text-align: center;
+	font-size: 90%;
+}
