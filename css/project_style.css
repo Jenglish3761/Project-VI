@@ -19,12 +19,12 @@ img{
 	margin-right: auto;
 	height: 300px;
 	display: block;
-	border: 2px solid blue;
+	border: 2px solid black;
 	box-shadow: 10px 10px 5px gray;	
 }
 
 figure{	
-	border: 2px solid green;
+	border: 2px solid red;
 	border-radius: 25px;
 	margin: auto;
 	padding: 0.5em;
