@@ -69,4 +69,15 @@ figcaption{
 
 .week{
 	color: red;
+	font-style: bold;
+}
+
+.phase{
+	colour: red;
+	font-style: bold;
+}
+
+.day{
+	colour: red;
+	font-style: bold;
 }
