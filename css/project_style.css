@@ -12,6 +12,11 @@ body{
 	padding: 10px;
 }
 
+div{
+	border: 2px solid red;
+	padding: 10px;
+}
+
 /* IMG qualities */
 
 img{
