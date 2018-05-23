@@ -25,8 +25,8 @@ div{
 
 li.hmenu{
 	display: inline;
-	/*margin: 10px 20px 10px 20px;*/
-	margin: auto;
+	margin: 10px 20px 10px 20px;
+	
 }
 
 a:link.menu, a:visited.menu{
