@@ -21,6 +21,27 @@ div{
 	
 }
 
+/* Menu qualities */
+
+li.hmenu{
+	display: inline;	
+}
+
+a:link.menu, a:visited.menu{
+	text-decoration: none;
+	font-weight: 500;
+	color: black;
+}
+
+a:hover.menu{
+	font-weight: 900;
+}
+
+a:active.menu{
+	font-weight: 900;
+	color: red;
+}
+
 /* IMG qualities */
 
 img{
