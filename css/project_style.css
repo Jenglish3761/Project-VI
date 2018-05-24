@@ -12,7 +12,7 @@ body{
 	padding: 10px;
 }
 
-div.header{
+.header{
 	display: block;
 	border: 2px solid red;
 	width: 930px;
