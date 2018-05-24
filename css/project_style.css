@@ -51,6 +51,17 @@ a:active.menu{
 	color: red;
 }
 
+/* Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* IMG qualities */
 
 img{
@@ -74,6 +85,8 @@ figcaption{
 	text-align: center;
 	font-size: 90%;
 }
+
+/* Mikes stuff*/
 
 .week{
 	color: red;
