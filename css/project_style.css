@@ -25,7 +25,7 @@ div{
 
 li.hmenu{
 	display: inline;
-	text-align: center;
+	float: center;
 	margin: 10px 20px 10px 20px;
 	
 }
