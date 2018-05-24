@@ -23,6 +23,10 @@ div{
 
 /* Menu qualities */
 
+ul.centered{
+	text-align: center;	
+}
+
 li.hmenu{
 	display: inline;
 	margin: 10px 20px 10px 20px;
