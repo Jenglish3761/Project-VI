@@ -39,15 +39,23 @@
 					<label><input type="radio" name="fac_or_student" value="faculty" />Faculty</label>
 					<label><input type="radio" name="fac_or_student" value="student" />Student</label>
 				</fieldset>
-				<p>I currently ... (check all that apply)</p>
-				<label><input type="checkbox" name="involvment[]" value="none" />Have no involvment in project</label><br/>
-				<label><input type="checkbox" name="involvment[]" value="instructor" />An instructor in this project</label><br/>
-				<label><input type="checkbox" name="involvment[]" value="instructor_other" />An instructor in a different project</label><br/>
-				<label><input type="checkbox" name="involvment[]" value="student" />A student in this project</label><br/>
-				<label><input type="checkbox" name="involvment[]" value="student_other" />A student in a different project</label><br/>
-				<label><input type="checkbox" name="involvment[]" value="admin" />A college administrator</label><br/>
-				<label><input type="checkbox" name="involvment[]" value="external" />An external reviewer</label><br/>
 
+				<fieldset>
+					<legend>
+						Other Information
+					</legend>
+					<!--Checkbox-->
+					<p>I currently ... (check all that apply)</p>
+					<label><input type="checkbox" name="involvement[]" value="none" />Have no involvment in project</label><br/>
+					<label><input type="checkbox" name="involvement[]" value="instructor" />An instructor in this project</label><br/>
+					<label><input type="checkbox" name="involvement[]" value="instructor_other" />An instructor in a different project</label><br/>
+					<label><input type="checkbox" name="involvement[]" value="student" />A student in this project</label><br/>
+					<label><input type="checkbox" name="involvement[]" value="student_other" />A student in a different project</label><br/>
+					<label><input type="checkbox" name="involvement[]" value="admin" />A college administrator</label><br/>
+					<label><input type="checkbox" name="involvement[]" value="external" />An external reviewer</label><br/>
+				</fieldset>
+
+				<!--Submit button-->
 				<input type="submit" value="Submit Request" />
 			</form>
 		</body>
