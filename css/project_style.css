@@ -25,11 +25,14 @@ div{
 
 ul.centered{
 	text-align: centered;	
+	float: center;
 }
 
 li.hmenu{
 	display: inline-block;
 	margin: 10px 20px 10px 20px;
+	text-align: center;
+	float: center;
 	
 }
 
