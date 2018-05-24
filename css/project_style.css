@@ -23,6 +23,9 @@ div{
 
 /* Menu qualities */
 
+ul.centered{
+	text-align: centered;	
+}
 
 li.hmenu{
 	display: inline-block;
