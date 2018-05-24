@@ -27,5 +27,6 @@ $submitted = !empty($_POST);
          </ul>
        </li>
     </ul>
+  <p>Copyright &copy 2018 JAM</p>
   </body>
 </html>

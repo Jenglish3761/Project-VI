@@ -12,5 +12,6 @@ $submitted = !empty($_POST);
       <li><b>username</b>: <?php echo $_POST['username']; ?></li>
       <li><b>password</b>: <?php echo $_POST['password']; ?></li>
     </ul>
+  <p>Copyright &copy 2018 JAM</p>
   </body>
 </html>
