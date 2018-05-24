@@ -14,4 +14,3 @@ $submitted = !empty($_POST);
     </ul>
   </body>
 </html>
-  
