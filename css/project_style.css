@@ -95,6 +95,14 @@ figcaption{
 	font-size: 90%;
 }
 
+/* Table Qualities */
+
+#gantt{
+	border-collapse: collapse;
+	width: 950px;
+}
+
+
 /* Mikes stuff*/
 
 .week{
