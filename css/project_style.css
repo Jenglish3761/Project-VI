@@ -102,6 +102,20 @@ figcaption{
 	width: 950px;
 }
 
+#gantt td, #gantt th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#gantt th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: red;
+    color: black;
+}
+
+
 
 /* Mikes stuff*/
 
