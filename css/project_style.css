@@ -116,6 +116,10 @@ figcaption{
     color: black;
 }
 
+#gantt td #jeff {
+	background-color: yellow;
+}
+
 
 
 /* Mikes stuff*/
