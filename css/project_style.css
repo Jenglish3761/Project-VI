@@ -116,9 +116,10 @@ figcaption{
     color: black;
 }
 
-#gantt td #jeff {
+.jeff {
 	background-color: yellow;
 }
+
 
 
 
