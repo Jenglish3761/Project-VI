@@ -50,7 +50,13 @@ a:active.menu{
 	font-weight: 900;
 	color: red;
 }
-
+/* Form format*/
+form, footer {
+  display:block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Dropdown menu */
 
 .dropdown {
