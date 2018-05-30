@@ -18,13 +18,13 @@ body.border{
 	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 }
 
 /* Menu qualities */
 
 ul.centered{
-	text-align: justify;	
+	text-align: justify;
 	float: center;
 }
 
@@ -33,7 +33,7 @@ li.hmenu{
 	margin: 10px 20px 10px 20px;
 	text-align: justify;
 	float: center;
-	
+
 }
 
 a:link.menu, a:visited.menu{
@@ -50,7 +50,13 @@ a:active.menu{
 	font-weight: 900;
 	color: red;
 }
-
+/* Form format*/
+form, footer {
+  display:block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Dropdown menu */
 
 .dropdown {
@@ -79,17 +85,17 @@ img{
 	height: 300px;
 	display: block;
 	border: 2px solid black;
-	box-shadow: 10px 10px 5px gray;	
+	box-shadow: 10px 10px 5px gray;
 }
 
-figure{	
+figure{
 	border: 2px solid red;
 	border-radius: 25px;
 	margin: auto;
 	padding: 0.5em;
 }
 
-figcaption{	
+figcaption{
 	font-style: italic;
 	text-align: center;
 	font-size: 90%;
