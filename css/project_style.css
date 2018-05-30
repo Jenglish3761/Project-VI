@@ -143,16 +143,19 @@ figcaption{
 /* Mikes stuff*/
 
 .week{
-	color: red;
+	color: black;
 	font-style: bold;
+	font-variant: small-caps;
 }
 
 .phase{
-	color: red;
+	color: black;
 	font-style: bold;
+	font-variant: small-caps;
 }
 
 .day{
-	color: red;
+	color: black;
 	font-style: bold;
+	font-variant: small-caps;
 }
