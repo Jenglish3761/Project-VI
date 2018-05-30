@@ -1,0 +1,28 @@
+/* Form format*/
+form, footer {
+  display:block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_label {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding: 0px 10px 0px 0px;
+}
+.text_input{
+	width: 150px;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+/*.logmein{
+  float: right;
+}*/
+div{
+  padding: 10px 0px 10px 0px;
+  width: 400px;
+}
+
+#submit {float: right;}

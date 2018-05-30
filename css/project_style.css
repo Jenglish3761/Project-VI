@@ -57,7 +57,7 @@ form, footer {
   margin-left: auto;
   margin-right: auto;
 }
-/*.text_label {
+.text_label {
 	float: left;
 	width: 100px;
 	text-align: right;
@@ -68,12 +68,12 @@ form, footer {
 	text-align: left;
 	padding: 0px 0px 0px 10px;
 }
-div {
+/*div {
 	padding: 10px 0px 10px 0px;
 	width: 274px;
-}
+}*/
 #submit {float: right}
-*/
+
 /* Dropdown menu */
 
 .dropdown {
