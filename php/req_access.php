@@ -66,10 +66,7 @@ $submitted = !empty($_POST);
 			
 			$stmt = mysqli_prepare($dbc,$query);
 			
-			i Integers
-			d Doubles
-			b Blobs
-			s Everything Else
+		
 				
 			mysqli_stmt_bind_param($stmt, "sssss", $f_name, $l_name, $email, $birthday, $type);
 			
