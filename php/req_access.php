@@ -84,7 +84,7 @@ $submitted = !empty($_POST);
 			}
 		}else{
 			echo 'you missed some data';
-	  
+		}
 	  }
 	  
 	  
