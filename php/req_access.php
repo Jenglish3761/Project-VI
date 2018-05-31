@@ -9,8 +9,8 @@ $submitted = !empty($_POST);
     <p>Form submitted? <?php echo (int) $submitted; ?> </p>
     <p>The information sent : </p>
     <ul>
-      	<li><b>First Name</b>: <?php echo $_POST['firstname']; ?></li>
-      	<li><b>Last Name</b>: <?php echo $_POST['lastname']; ?></li>
+      	<li><b>First Name</b>: <?php echo $_POST['first_name']; ?></li>
+      	<li><b>Last Name</b>: <?php echo $_POST['last_name']; ?></li>
         <li><b>Email address</b>: <?php echo $_POST['email']; ?></li>
         <li><b>Birthdate</b>: <?php echo $_POST['birthday']; ?></li>
 				<li><b>Faculty or Student</b>: <?php echo $_POST['fac_or_student']; ?></li>
