@@ -13,7 +13,7 @@ $submitted = !empty($_POST);
       	<li><b>Last Name</b>: <?php echo $_POST['last_name']; ?></li>
         <li><b>Email address</b>: <?php echo $_POST['email']; ?></li>
         <li><b>Birthdate</b>: <?php echo $_POST['birthday']; ?></li>
-				<li><b>Faculty or Student</b>: <?php echo $_POST['fac_or_student']; ?></li>
+				<li><b>Faculty or Student</b>: <?php echo $_POST['type']; ?></li>
         <li>
           <b>Other info</b>:
           <ul>
