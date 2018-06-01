@@ -1,6 +1,7 @@
 <html>
   <head>
-    <title>Get info</title>
+	  <title>Get info</title>
+	  <link rel="stylesheet" type="text/css" href="../css/project_style.css">
   </head>
   
   <body>
