@@ -50,19 +50,29 @@
       
         $query = "INSERT INTO elevator (first_name, last_name, email, birthday, id) VALUES (?,?,?,?,NULL)";
         
-        $stmt = mysqli_prepare($dbc, $query);
-        mysqli_stmt_bind_param($stmt, "ssss", $f_name, $l_name, $email, $birthday);
-        mysqli_stmt_execute($stmt);
+        $stmt = $dbc->prepare($query);
+        $stmt->bind_param("ssss",$f_name, $l_name, $email, $birthday);
+        $stmt->execute();
+        
+        //$stmt = mysqli_prepare($dbc, $query);
+        //mysqli_stmt_bind_param($stmt, "ssss", $f_name, $l_name, $email, $birthday);
+        //mysqli_stmt_execute($stmt);
         
         $affected = mysqli_stmt_affected_rows($stmt);
         if($affected == 1){
           echo 'Person Entered';
-          mysqli_stmt_close($stmt);
-          mysqli_close($dbc);
+          $stmt->close();
+          $dbc->close();
+          
+          //mysqli_stmt_close($stmt);
+          //mysqli_close($dbc);
         } else{
           echo mysqli_error();
-          mysqli_stmt_close($stmt);
-          mysqli_close($dbc);
+          $stmt->close();
+          $dbc->close();
+          
+          //mysqli_stmt_close($stmt);
+          //mysqli_close($dbc);
         }
         
       } else{
