@@ -1,6 +1,6 @@
 <?php
 
-require_once('mysql_connect.php');
+require_once('../mysql_connect.php');
 
 $query = "SELECT first_name, last_name, email, birthday, type, FROM req_access";
 
