@@ -2,7 +2,7 @@
 
 require_once('mysqli_connect.php');
 
-$query = "SELECT first_name, last_name, email, birthday, type, FROM req_access";
+$query = "SELECT first_name, last_name, email, birthday, type FROM req_access";
 
 $response = @mysqli_query($dbc, $query);
 
