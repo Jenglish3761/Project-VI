@@ -50,7 +50,7 @@
       if(empty($data_missing)){
         require_once('mysqli_connect.php');
         $dbc = new mysqli("localhost","root", "", "elevator");
-        $query = "INSERT INTO elevator (first_name, last_name, email, birthday, id) VALUES (?,?,?,?,NULL)";
+        $query = "INSERT INTO req_access (first_name, last_name, email, birthday, id) VALUES (?,?,?,?,NULL)";
         
         $stmt = $dbc->prepare($query);
         $stmt->bind_param("ssss",$f_name, $l_name, $email, $birthday);
