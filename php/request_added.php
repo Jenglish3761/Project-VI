@@ -48,7 +48,7 @@
       if(empty($data_missing)){
         require_once('mysqli_connect.php');
       
-        $query = "INSERT INTO elevator (first_name, last_name, email, birthday, id) VALUES (?,?,?,?,NULL)
+        $query = "INSERT INTO elevator (first_name, last_name, email, birthday, id) VALUES (?,?,?,?,NULL)";
         
         $stmt = mysqli_prepare($dbc, $query);
         mysqli_stmt_bind_param($stmt, "ssss", $f_name, $l_name, $email, $birthday);
