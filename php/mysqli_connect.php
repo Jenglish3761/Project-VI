@@ -1,7 +1,7 @@
 <?php
 
 DEFINE ('DB_USER', 'alex');
-DEFINE ('DB_PASSWORD', 'jam');
+DEFINE ('DB_PASSWORD', 'YES');
 DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'elevator');
 
