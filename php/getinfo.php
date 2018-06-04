@@ -12,7 +12,7 @@ $query = "SELECT first_name, last_name, email, birthday, type, time FROM req_acc
 $response = @mysqli_query($dbc, $query);
 
 if($response){
-	echo '<table align="left">
+	echo '<table id="gantt" align="left">
 			<tr>
 				<th>First Name</th>
 				<th>Last Name</th>
