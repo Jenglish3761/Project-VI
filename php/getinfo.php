@@ -12,13 +12,14 @@ $query = "SELECT first_name, last_name, email, birthday, type, time FROM req_acc
 $response = @mysqli_query($dbc, $query);
 
 if($response){
-	echo '<table align="left">
+	echo '<table id="gantt" align="left">
 			<tr>
 				<th>First Name</th>
 				<th>Last Name</th>
 				<th>Email</th>
 				<th>Birthday</th>
 				<th>Type</th>
+				<th>Date Entered</th>
 			</tr>';
 			
 			while($row = mysqli_fetch_array($response)){

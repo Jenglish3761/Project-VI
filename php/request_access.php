@@ -4,7 +4,7 @@
 	  <link rel="stylesheet" type="text/css" href="../css/project_style.css">
   </head>
   
-  <body>
+  <body class="border">
   
   <form action="request_added.php" method="post">
   
@@ -18,11 +18,11 @@
 					<p><label>Email: 	<input class='text' type='email' name='email' /></label></p>
  					<p><label>Birthdate: 	<input class='text' type='date' name='birthday' /></label></p>
 					<!-- Radio buttons -->
-					<label><input type="radio" name='type' value="faculty" />Faculty</label>
-					<label><input type="radio" name='type' value="student" />Student</label>
+					<label><input type="radio" name='type' value="F" />Faculty</label>
+					<label><input type="radio" name='type' value="S" />Student</label>
 		</fieldset>
     
-    <p><input type="submit" name="submit" valur"Send"/></p>
+    <p><input type="submit" name="submit" value="Send"/></p>
   
   </form>
   </body>
