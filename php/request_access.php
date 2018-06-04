@@ -22,7 +22,7 @@
 					<label><input type="radio" name='type' value="S" />Student</label>
 		</fieldset>
     
-    <p><input type="submit" name="submit" valur"Send"/></p>
+    <p><input type="submit" name="submit" value="Send"/></p>
   
   </form>
   </body>
