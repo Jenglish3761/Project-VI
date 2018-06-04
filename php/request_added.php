@@ -7,13 +7,13 @@
   <body>
     <?php
     error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+    ini_set('display_errors', 1); //error checking
     
-    if(isset($_POST['submit'])){
+    if(isset($_POST['submit'])){ //if submit was pressed from request_access.php
     
       $data_missing = array();
       
-      
+      //this code fills an array if any data is missing
       if(empty($_POST['first_name'])){ //checks if first name was enetered
         $data_missing[] = 'First Name';
         
@@ -47,41 +47,38 @@
       } else{
         $type = trim($_POST['type']);
       }
-      if(empty($data_missing)){
-        //require_once('mysqli_connect.php');
-        $dbc = new mysqli("localhost","root", "", "elevator");
-        $query = "INSERT INTO req_access (first_name, last_name, email, birthday, type, id) VALUES (?,?,?,?,?,NULL)";
+      
+      
+      if(empty($data_missing)){ //if no data was missing get ready to send to MySQL
+       
+        $dbc = new mysqli("localhost","root", "", "elevator"); //opens a database connection
+        $query = "INSERT INTO req_access (first_name, last_name, email, birthday, type, id) VALUES (?,?,?,?,?,NULL)"; //sets our query
         
-        $stmt = $dbc->prepare($query);
+        $stmt = $dbc->prepare($query); //set statement to prepare to send
         $stmt->bind_param("sssss",$f_name, $l_name, $email, $birthday, $type);
+        
         $stmt->execute();
         
-        //$stmt = mysqli_prepare($dbc, $query);
-        //mysqli_stmt_bind_param($stmt, "ssss", $f_name, $l_name, $email, $birthday);
-        //mysqli_stmt_execute($stmt);
         
-        $affected = mysqli_stmt_affected_rows($stmt);
+        $affected = mysqli_stmt_affected_rows($stmt);//visible check if data was entered correctly
         if($affected == 1){
           echo 'Person Entered';
           $stmt->close();
           $dbc->close();
           
-          //mysqli_stmt_close($stmt);
-          //mysqli_close($dbc);
         } else{
           echo mysqli_error();
           $stmt->close();
           $dbc->close();
           
-          //mysqli_stmt_close($stmt);
-          //mysqli_close($dbc);
+          
         }
         
       } else{
         
-        echo 'You need to enter:<br/>';
-        foreach($data_missing as $missing){
         
+        echo 'You need to enter:<br/>';
+        foreach($data_missing as $missing){ //shows all values that were missing from request_access.php
           echo "$missing<br/>";
         }
      }
