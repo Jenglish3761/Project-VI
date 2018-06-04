@@ -19,6 +19,7 @@ if($response){
 				<th>Email</th>
 				<th>Birthday</th>
 				<th>Type</th>
+				<th>Date Entered</th>
 			</tr>';
 			
 			while($row = mysqli_fetch_array($response)){
