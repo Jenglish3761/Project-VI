@@ -1,0 +1,6 @@
+Data:1 < ADDXPR ONLY_ADD_IF_NEW "PORTA"
+Data:1 < ADDXPR ONLY_ADD_IF_NEW "calledFloor"
+Data:1 < ADDXPR ONLY_ADD_IF_NEW "currentFloor"
+Data:2 < ADDXPR ONLY_ADD_IF_NEW "rxdata"
+Data:2 < ADDXPR ONLY_ADD_IF_NEW "txbuff"
+Data:2 < ADDXPR ONLY_ADD_IF_NEW "TXBUFF"
