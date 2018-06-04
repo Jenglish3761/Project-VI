@@ -30,7 +30,7 @@
 		<h1>Alexander's logbook</h1>
 
 		<figure>
-			<img src="../img/alex_fingerguns.jpg" alt="alex">
+			<img src="../img/alex.jpg" alt="alex">
 			<figcaption><br/>Alexander Bradley - 7228885 3rd year ESE conestoga college</figcaption>
 		</figure>
 		<h2>PHASE 1</h2>
@@ -104,7 +104,6 @@
 			<ul>
 				<li>Started Data Comm assignment</li>
 				<li>Seperated files out for the website and cleaned up some code</li>\
-				<li></li>
 			</ul>
 		<h3>May,17/2018</h3>
 			<ul>
@@ -135,7 +134,6 @@
 		<h3>May,23/2018</h3>
 			<ul>
 				<li>Data Comm quiz</li>
-				<li></li>
 			</ul>
 		<h3>May,24/2018</h3>
 			<ul>
@@ -158,23 +156,34 @@
 			</ul>
 		<h3>May,29/2018</h3>
 			<ul>
-				<li></li>
-				<li></li>
+				<li>Updated floor nodes to keep call lights on until the elevator reaches that floor</li>
+				<li>Started elevator node</li>
+				<li>Wired elevator node with 5 buttons, 8 lights</li>
+				<li>Buttons are</li>
+				<ul>
+					<li>BTN1 - FLOOR 1</li>
+					<li>BTN2 - FLOOR 2</li>
+					<li>BTN3 - FLOOR 3</li>
+					<li>BTN4 - CLOSE DOOR(enable elevator)</li>
+					<li>BTN5 - OPEN DOOR(disable elevator)</li>
+				</ul>
+				<li>Elevator code WIP</li>
 			</ul>
 		<h3>May,30/2018</h3>
 			<ul>
-				<li></li>
-				<li></li>
+				<li>Elevator code now properly calls elevators to the floor on respective button press</li>
+				<li>Elevator keeps call light on until floor is reached</li>
+				<li>Elevator Open / Close lights working just on button press</li>
 			</ul>
 		<h3>May,31/2018</h3>
 			<ul>
-				<li></li>
-				<li></li>
+				<li>Fixed bit masking in elevator program so changing lights doesnt affect all lights</li>
+				<li>Fixed ALWAYS FALSE warning on switch case to turn on and off indicators</li>
 			</ul>
 		<h3>June,1/2018</h3>
 			<ul>
-				<li></li>
-				<li></li>
+				<li>Open light changed to light up on arrival to floor</li>
+				<li>Supervisor program disables elevator on Open command, until closed</li>
 			</ul>
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <p>Copyright &copy 2018 JAM</p>
