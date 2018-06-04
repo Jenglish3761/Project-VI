@@ -4,7 +4,7 @@
 	  <link rel="stylesheet" type="text/css" href="../css/project_style.css">
   </head>
   
-  <body>
+  <body class="border">
   
   <form action="request_added.php" method="post">
   
