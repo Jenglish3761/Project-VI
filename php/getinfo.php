@@ -3,15 +3,17 @@
 	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
 </head>
 <body class="border">
+	
 <?php
 
-require_once('mysqli_connect.php');
+require_once('mysqli_connect.php'); //open connection to database from link
 
-$query = "SELECT first_name, last_name, email, birthday, type, time FROM req_access";
+$query = "SELECT first_name, last_name, email, birthday, type, time FROM req_access"; //set query to grab data from req_access table
 
-$response = @mysqli_query($dbc, $query);
+$response = @mysqli_query($dbc, $query); //store response of query in variable
 
-if($response){
+if($response){ //if response is not empty print table of values
+	
 	echo '<table id="gantt" align="left">
 			<tr>
 				<th>First Name</th>
@@ -22,7 +24,7 @@ if($response){
 				<th>Date Entered</th>
 			</tr>';
 			
-			while($row = mysqli_fetch_array($response)){
+			while($row = mysqli_fetch_array($response)){ //while data is pulled fill table rows
 				echo '<tr>
 						<td>' . $row['first_name'] . '</td>
 						<td>' . $row['last_name'] . '</td>
