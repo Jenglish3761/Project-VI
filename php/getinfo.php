@@ -1,19 +1,24 @@
+<head>
+	<title>GetInfo</title>
+	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
+</head>
+<body class="border">
 <?php
 
 require_once('mysqli_connect.php');
 
-$query = "SELECT first_name, last_name, email, birthday, type FROM req_access";
+$query = "SELECT first_name, last_name, email, birthday, type, time FROM req_access";
 
 $response = @mysqli_query($dbc, $query);
 
 if($response){
 	echo '<table align="left">
 			<tr>
-				<td>First Name</td>
-				<td>Last Name</td>
-				<td>Email</td>
-				<td>Birthday</td>
-				<td>Type</td>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Birthday</th>
+				<th>Type</th>
 			</tr>';
 			
 			while($row = mysqli_fetch_array($response)){
@@ -22,7 +27,8 @@ if($response){
 						<td>' . $row['last_name'] . '</td>
 						<td>' . $row['email'] . '</td>
 						<td>' . $row['birthday'] . '</td>
-						<td>' . $row['type'] . '</td>';
+						<td>' . $row['type'] . '</td>
+						<td>' . $row['time'] . '</td>';
 						
 				echo '</tr>';
 			}
@@ -36,3 +42,4 @@ if($response){
 
 mysqli_close($dbc);
 ?>
+</body>
