@@ -10,7 +10,7 @@
 
 	<body width: 900; border: none; onload="startTime()">
 	
-	<p align="right" id="time">current time: </p>
+	<p float="right" id="time">current time: </p>
 	<div id="header">
 			
       		<ul class="centered">
@@ -35,7 +35,7 @@
 	<script>
 		function startTime(){
 			var time = new Date();
-			document.getElementById("time").innerHTML = "current time: " + time.toTimeString() + "                    ";
+			document.getElementById("time").innerHTML = "current time: " + time.toTimeString();
 			var t = setTimeout(startTime, 500);
 		}
 	</script>										
