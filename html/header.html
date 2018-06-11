@@ -8,8 +8,9 @@
 		<base target="_parent">
   </head>
 
-	<body width: 900; border: none;">
+	<body width: 900; border: none; onload="startTime()>
 	<div id="header">
+			<p id="time">current time: </p>
       		<ul class="centered">
 			<li class="hmenu"><a class="menu" href="../index.html">Index</a></li>
 			<li class="hmenu"><a class="menu" href="../html/about.html">About</a></li>
@@ -29,3 +30,11 @@
 		</ul>
 	</div>  
 	</body>
+	<script>
+		function startTime(){
+			var time = new Date();
+			document.getElementById("time").innerHTML = "current time: " + time.toTimeString();
+			var t = setTimeout(startTime, 500);
+		}
+	</script>										
+</html>										
