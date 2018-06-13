@@ -3,13 +3,15 @@
 	  <title>Get info</title>
 	  <link rel="stylesheet" type="text/css" href="../css/project_style.css">
   </head>
-  
+  <?php
+  require '../html/header.html';
+   ?>
   <body class="border">
-  
+
   <form action="request_added.php" method="post">
-  
+
     <b>Add new person</b>
-    
+
     <fieldset>
 					<legend>Contact Information</legend>
 					<!-- Written info -->
@@ -21,11 +23,9 @@
 					<label><input type="radio" name='type' value="F" />Faculty</label>
 					<label><input type="radio" name='type' value="S" />Student</label>
 		</fieldset>
-    
+
     <p><input type="submit" name="submit" value="Send"/></p>
-  
+
   </form>
   </body>
 </html>
-  
-  

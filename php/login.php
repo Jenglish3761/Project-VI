@@ -1,5 +1,6 @@
 <?php
 $submitted = !empty($_POST);
+require '../html/header.html';
 ?>
 
 <!DOCTYPE html>
