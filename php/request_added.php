@@ -85,5 +85,8 @@
   }
 
 ?>
+</br>
+<a href='request_access.php'>Back to previous page</a></br>
+<a href='getinfo.php'>See the table</a>
 </body>
 </html>
