@@ -7,9 +7,9 @@
   <?php
   require '../html/header.html';
    ?>
-  <body class="border">
+  <body class='border'>
 
-  <form action="request_added.php" method="post">
+  <form class='border' action="request_added.php" method="post">
 
     <b>Add new person</b>
 
@@ -27,9 +27,6 @@
 
           <p><input class='submit' type="submit" name="submit" value="Submit"/></p>
 		</fieldset>
-
-
-
   </form>
   </body>
 </html>

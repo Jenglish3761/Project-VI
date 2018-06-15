@@ -5,8 +5,11 @@ require '../html/header.html';
 
 <!DOCTYPE html>
 <html>
-  <head> <title>Form Handler Page</title></head>
-  <body>
+  <head>
+    <title>Form Handler Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/project_style.css">
+  </head>
+  <body class='border'>
     <p>Form submitted? <?php echo (int) $submitted; ?> </p>
     <p>Your login info is: </p>
     <ul>
