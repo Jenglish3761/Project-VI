@@ -4,23 +4,14 @@
 	  <link rel="stylesheet" type="text/css" href="../css/project_style.css">
     <link rel="stylesheet" type="text/css" href="../css/req_access_style.css">
   </head>
-
-  <body class='border'>
-    <iframe
-    	width='1000'
-    	height='150'
-    	allowfullscreen
-    	seamless
-    	src="../html/header.html"
-    			frameborder="0"
-    	style="border:0"
-    	>
-    </iframe><br />
-  <form class='border' action="request_added.php" method="post">
-
-    <b>Add new person</b>
-
+  <?php
+  include '../html/navbar.html';
+   ?>
+  <body>
+  <br>
+  <form action="request_added.php" method="post">
     <fieldset>
+
 					<legend>Contact Information</legend>
 					<!-- Written info -->
 					<p><label class='text_label'>First Name:</label> <input class='text_input' type="text" name='first_name'/></p>

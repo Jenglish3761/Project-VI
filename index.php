@@ -12,18 +12,20 @@
     	<link rel="icon" type="image/jpg" href="docs/img/jam.jpg">
   </head>
 
+<?php
+require 'html/navbar.html';
+ ?>
   <body class="border">
-    <iframe
+<!--    <iframe
     	width='1000'
     	height='150'
     	allowfullscreen
     	seamless
-    	src="html/header.html"
+    	src="html/navbar.html"
     			frameborder="0"
     	style="border:0"
     	>
-    </iframe><br />
-
+    </iframe><br />-->
 
   	<h1>JAM MAIN MENU</h1>
 

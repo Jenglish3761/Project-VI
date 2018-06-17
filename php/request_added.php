@@ -3,8 +3,10 @@
   <title>Request Made</title>
   <link rel="stylesheet" type="text/css" href="../css/project_style.css">
   </head>
-
-  <body>
+<?php
+require '../html/navbar.html';
+ ?>
+  <body class='border'>
     <?php
     error_reporting(E_ALL);
     ini_set('display_errors', 1); //error checking

@@ -13,26 +13,18 @@
 		<meta http-equiv='author' content='Jeffrey English' />
 		<meta http-equiv='pragma' content='no-cache' /> <!-- force browser to reload page every time - updates often -->
 	</head>
-
+	<?php
+	require '../../html/navbar.html';
+	 ?>
 	<body class="border">
 
-	<iframe
-			width='1000'
-			height='150'
-			allowfullscreen
-			seamless
-			src="../../html/header.html"
-	    		frameborder="0"
-			style="border:0"
-			>
-    	</iframe><br />
 
 		<h1>Jeff's logbook</h1>
 
 		<figure>
 			<img src="../img/jeff.jpg" alt="jeff">
 			<figcaption><br/>Jeff English-7223761 3rd year ESE conestoga college</figcaption>
-			
+
 
 		</figure>
 
@@ -294,7 +286,7 @@
 
 
 				</ul>
-		
+
 		<h2 id="phase2">PHASE 2</h2>
 
 		<h2 id="week5">Week 5</h2>
@@ -304,7 +296,7 @@
 				<ul>
 					<li>End of phase 1 debrief</li>
 					<li>Project on schedule</li>
-					
+
 
 				</ul>
 
@@ -326,7 +318,7 @@
 
 				<ul>
 					<li>Continued researching C++ and python</li>
-					
+
 				</ul>
 
 			<h3>Friday June,8/2018</h3>
@@ -351,15 +343,15 @@
 
 
 				</ul>
-		
+
 		<h2 id="week6">Week 6</h2>
 
 			<h3>Monday June,11/2018</h3>
 
 				<ul>
 					<li></li>
-					
-					
+
+
 
 				</ul>
 
@@ -381,7 +373,7 @@
 
 				<ul>
 					<li></li>
-					
+
 				</ul>
 
 			<h3>Friday June,15/2018</h3>

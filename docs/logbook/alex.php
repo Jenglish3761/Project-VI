@@ -1,31 +1,15 @@
 <!DOCTYPE html>
-
-
-
 <html>
-
-
-
 	<head>
-
 		<title>Alexanders's Logbook</title>
 		<link rel="stylesheet" type="text/css" href="../../css/project_style.css">
 		<link rel="icon" type="image/jpg" href="../img/alex.jpg">
   </head>
 
-
-	<body class="border">
-
-	<iframe
-			width='1000'
-			height='150'
-			allowfullscreen
-			seamless
-			src="../../html/header.html"
-	    		frameborder="0"
-			style="border:0"
-			>
-    	</iframe><br />
+<?php
+require '../../html/navbar.html';
+ ?>
+	<body>
 
 		<h1>Alexander's logbook</h1>
 
@@ -186,7 +170,7 @@
 				<li>Supervisor program disables elevator on Open command, until closed</li>
 			</ul>
 		<h2>Week 5</h2>
-		
+
 		<h3>June,4/2018</h3>
 			<ul>
 				<li>Updated status report</li>

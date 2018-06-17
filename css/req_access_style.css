@@ -1,21 +1,18 @@
+/*Apply all*/
 *{
-	font-family: helvetica;
+	font-family: georgia;
 }
-body{
-	width: 350px;
-	padding: 0px;
-}
+
 fieldset{
   display: block;
   border: 2px solid black;
-  width: 800px;
+  width: 400px;
   padding: 10px;
-
-
+	margin: 0 auto;
 }
 legend{
   display: block;
-  border-radius: 25px;
+  border-radius: 2px;
   background: cyan;
   padding-left: 2px;
   padding-right: 2px;
@@ -23,7 +20,6 @@ legend{
 
 }
 .txt_area{
-  background-image: url('../img/alex.png');
   background-position: bottom;
   background-position: left;
   background-size: contain;

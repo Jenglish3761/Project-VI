@@ -2,10 +2,13 @@
 	<title>GetInfo</title>
 	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
 </head>
+<?php
+require '../html/navbar.html';
+ ?>
 <body class="border">
 
 <?php
-require '../html/header.html';
+
 require_once('mysqli_connect.php'); //open connection to database from link
 
 $query = "SELECT first_name, last_name, email, birthday, type, time FROM req_access"; //set query to grab data from req_access table

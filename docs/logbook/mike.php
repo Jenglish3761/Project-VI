@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html>
+	<script>
+		// When the user clicks on the "Top" button, scroll to the top of the webpage.
+		function topFunction()
+		{
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+	<head>
+		<title>Michael Wright - Logbook</title>
+		<meta name="Michael Wright - Logbook" content="This is the logbook activity tracking from Project VI." />
+		<meta name="robots" content="noindex nofollow" />
+		<meta http-equiv="author" content="Michael Wright" />
+		<meta http-equiv="pragma" conent="no-cache" />	<!-- Browser should update page every time it is loaded -->
+		<meta http-equiv="Cache-Control" content="no-store" />
+		<link rel="stylesheet" type="text/css" href="../../css/project_style.css">
+	</head>
+	<?php
+	require '../../html/navbar.html';
+	 ?>
+	<body class="border">
+
+		<h1>Michael Wright - Logbook</h1>
+
+
+		<figure>
+		<img src="../img/mike.jpg" alt="Michael Wright Mugshot">
+			<figcaption><br/>Michael Wright - 7218928 3rd Year ESE Conestoga College</figcation>
+		</figure>
+
+
+		<div id="header">
+			<h2>Links</h2>
+			<button onclick="window.location.href='../../index.php'">Home</button>
+			<ul>
+				<li class='phase_bullet'><a class='phase_link' href="#phase_1">Phase 1</a></li>
+				<ul>
+					<li class='week_bullet'><a class='week_link' href="#week_1">Week 1</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_2">Week 2</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_3">Week 3</a></li>
+					<li class='week_bullet'><a class='week_link' href="l#week_4">Week 4</a></li>
+				</ul>
+				<li class='phase_bullet'><a class='phase_link' href="#phase_2">Phase 2</a></li>
+				<ul
+					<li class='week_bullet'><a class='week_link' href="#week_5">Week 5</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_6">Week 6</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_7">Week 7</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_8">Week 8</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_9">Week 9</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_10">Week 10</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_11">Week 11</a></li>
+				</ul>
+				<li class='phase_bullet'><a class='phase_link' href="#phase_3">Phase 3</a></li>
+				<ul>
+					<li class='week_bullet'><a class='week_link' href="#week_12">Week 12</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_13">Week 13</a></li>
+					<li class='week_bullet'><a class='week_link' href="#week_14">Week 14</a></li>
+				</ul>
+			</ul>
+		</div>
+
+		<h3 class='phase' id="phase_1">Phase 1</h3>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_1">Week: 1</h4>
+		<h5 class='day'>Monday May 7, 2018:</h5>
+		<ul>
+			<li>Group formed with Alexander Bradley & Jeff English.</li>
+			<li>Elevator and CAN bus signed out and Axman development board signed out.</li>
+			<li>Putty installed on Linux machine.</li>
+			<li>Pi password changed (using 192.168.0.200).</li>
+		</ul>
+
+		<h5 class='day'>Tuesday May 8, 2018:</h5>
+		<ul>
+			<li>Elevator controlled via putty on Raspberry Pi and Linux machine.</li>
+			<li>Elevator controlled via Pi website.</li>
+			<li>Gantt chart started.</li>
+		</ul>
+
+		<h5 class='day'>Wednesday May 9, 2018:</h5>
+		<ul>
+			<li>PCAN connected to windows computer.</li>
+			<li>CAN commands sent via Axman, monitored using PCAN-viewer on windows PC.</li>
+			<li>Download and installed Git on Linux PC and Windows PC.</li>
+			<li>Set up Git account and joined project repo.</li>
+		</ul>
+
+		<h5 class='day'>Thursday May 10, 2018:</h5>
+		<ul>
+			<li>Basic website set up.</li>
+			<li>HTML logbook created and stored on Git.</li>
+			<li>Basic local web server set up on Linux machine.</li>
+			<li>Web server set up via Git.</li>
+		</ul>
+
+		<h5 class='day'>Friday May 11, 2018:</h5>
+		<ul>
+			<li>Website and logbook updated.</li>
+			<li>CAN commands sent using project IV board to ensure functionality.</li>
+			<li>Monitord CAN bus activity using PCAN-viewer on windows PC.</li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_2">Week: 2</h4>
+
+		<h5 class='day'>Monday May 14, 2018:</h5>
+		<ul>
+			<li>Logbook updated.</li>
+			<li>Gantt chart updated.</li>
+			<li>Top of page button added to lgbook.</li>
+			<li>Image placeholder added to logbook.</li>
+			<li>Axman CAN transmitting ID's set.</li>
+			<li>Project IV board transmitting ID's set.</li>
+		</ul>
+
+		<h5 class='day'>Tuesday May 15, 2018:</h5>
+		<ul>
+			<li>HTML logbook updated to include list features.</li>
+			<li>HTML logbook updated to include links to phases and weeks.</li>
+			<li>HTML logbook updated with buttons to top of page and to go to home page.</li>
+			<li>Created CodeWarrior project for floor node.</li>
+		</ul>
+
+		<h5 class='day'>Wednesday May 16, 2018:</h5>
+		<ul>
+			<li>Data Communication Assignment 1 started.</li>
+			<li>Program created on Pi supervisor to listen to floor nodes.</li>
+			<li>Buttons and LED's wired on Axman floor nodes.</li>
+			<li>Floor node's updated to send on respective addresses.</li>
+		</ul>
+
+		<h5 class='day'>Thursday May 17, 2018:</h5>
+		<ul>
+			<li>Data Communication Assignment 1 completed.</li>
+			<li>Floor nodes updated to send floor number on reset.</li>
+			<li>Supervisor program updated on Pi to move to floor based on messages recieved form floor nodes.</li>
+			<li>Math Assignment 3 Completed.</li>
+		</ul>
+
+		<h5 class='day'>Friday May 18, 2018:</h5>
+		<ul>
+			<li>Math Assignment 4 Completed</li>
+			<li>Floor nodes updated to send floor number on button press.</li>
+			<li>Floor nodes updated to only send message once if button is held down.</li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_3">Week: 3</h4>
+
+		<h5 class='day'>Monday May 21, 2018:</h5>
+		<ul>
+			<li>Victoria Day Holiday.</li>
+		</ul>
+
+		<h5 class='day'>Tuesday May 22, 2018:</h5>
+		<ul>
+			<li>Floor nodes updated to listen to motor controller.</li>
+			<li>LED floor number indicators wired to update upon receiving message from motor controller.</li>
+			<li>Floor nodes updated to light up LED's, updating only when a new message is received.</li>
+			<li>Math Quiz 2.</li>
+		</ul>
+
+		<h5 class='day'>Wednesday May 23, 2018:</h5>
+		<ul>
+			<li>Data Communications Quiz - CAN protocol.</li>
+			<li>Work in Applied Research Lab.</li>
+		</ul>
+
+		<h5 class='day'>Thursday May 24, 2018:</h5>
+		<ul>
+			<li>Clean up Floor Node code to leave indicator lights unaffected when call button is pressed.</li>
+			<li>Purchased switches and indicator lights for elevator.</li>
+			<li>Indacator lights and call button light re-wired.</li>
+		</ul>
+
+		<h5 class='day'>Friday May 25, 2018:</h5>
+		<ul>
+			<li>Floor node code adapted to turn on call light until elevator reaches floor.</li>
+			<li>Update floor node code to leave indcator lights unaffected while call light is on.</li>
+			<li>Thermodynamics Quiz - 1.</li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_4">Week: 4</h4>
+
+		<h5 class='day'>Monday May 28, 2018:</h5>
+		<ul>
+			<li>Continue to update Floor node code.</li>
+			<li>Floor node wiring diagram.</li>
+			<li>Schematics added to Project Details page as embedded PDF's.</li>
+			<li>Create status report.</li>
+		</ul>
+
+		<h5 class='day'>Tuesday May 29, 2018:</h5>
+		<ul>
+			<li>Second floor node updated to keep call light on until elevator reaches calling floor.</li>
+			<li>First and Third floor nodes updated with new code.</li>
+			<li>Elevator node program created.</li>
+			<li>Elevator node wired with call buttons and lights for each floor.</li>
+			<li>Elevator node wired with hold and close buttons.</li>
+			<li>Elevator node wired with open, closing, and closed door indicator lights.</li>
+		</ul>
+
+		<h5 class='day'>Wednesday May 30, 2018:</h5>
+		<ul>
+			<li>Elevator node program updated to send calls to floor numbers on respective button press.</li>
+			<li>Elevator node program updated to keep call lights on until floor has been reached.</li>
+			<li>Elevator node program updated to turn on open and close lights on respective button press.</li>
+		</ul>
+
+		<h5 class='day'>Thursday May 31, 2018:</h5>
+		<ul>
+			<li>Fixed bit masking in elevator program to leave other lights unaffected when changing open / close indicators.</li>
+			<li>Fixed logic to send floor call only once on button press.</li>
+			<li>Fixed always FALSE warning on switch case to turn on and off indicators.</li>
+		</ul>
+
+		<h5 class='day'>Friday June 1, 2018:</h5>
+		<ul>
+			<li>Open light changed to light up automatically on arrival to floor.</li>
+			<li>Supervisor updated to disable elevator operation while the door is open.</li>
+		</ul>
+
+		<h3 class='phase' id="phase_2">Phase 2</h3>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_5">Week: 5</h4>
+
+		<h5 class='day'>Monday June 4, 2018:</h5>
+		<ul>
+			<li>Documenting new elevator protocol.</li>
+			<li>Logbook updated.</li>
+			<li>Debrief</li>
+		</ul>
+
+		<h5 class='day'>Tuesday June 5, 2018:</h5>
+		<ul>
+			<li>Math midterm studying.</li>
+		</ul>
+
+		<h5 class='day'>Wednesday June 6, 2018:</h5>
+		<ul>
+			<li>Math midterm studying.</li>
+			<li>Work in applied research lab.</li>
+		</ul>
+
+		<h5 class='day'>Thursday June 7, 2018:</h5>
+		<ul>
+			<li>Math midterm.</li>
+			<li>Study for datacomm quiz.</li>
+		</ul>
+
+		<h5 class='day'>Friday June 8, 2018:</h5>
+		<ul>
+			<li>Datacomm quiz.</li>
+			<li>Work in applied research lab.</li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_6">Week: 6</h4>
+
+		<h5 class='day'>Monday June 11, 2018:</h5>
+		<ul>
+			<li>Update logbook.</li>
+			<li>Install second call button on floor 2.</li>
+			<li>Update floor 2 program to respond to up and down calls.</li>
+			<li>Study for math quiz.</li>
+		</ul>
+
+		<h5 class='day'>Tuesday June 12, 2018:</h5>
+		<ul>
+			<li>Work in applied research lab.</li>
+			<li>Update floor 2 program to respond to up and down calls.<li/>
+		</ul>
+
+		<h5 class='day'>Wednesday June 13, 2018:</h5>
+		<ul>
+			<li>Work in applied research lab.</li>
+			<li>Update elevator node to track which direction car is moving in.</li>
+		</ul>
+
+		<h5 class='day'>Thursday June 14, 2018:</h5>
+		<ul>
+			<li>Work in applied research lab.</li>
+			<li>Update pi to send out which direction elevator is travelling in, and send requests to Tommy board accordingly.</li>
+			<li>Software engineering quiz.</li>
+			<li>Thermodynamics quiz.</li>
+		</ul>
+
+		<h5 class='day'>Friday June 15, 2018:</h5>
+		<ul>
+			<li>Work in applied research lab.</li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_7">Week: 7</h4>
+
+		<h5 class='day'>Monday June 18, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Tuesday June 19, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Wednesday June 20, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Thursday June 21, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Friday June 22, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_8">Week: 8</h4>
+
+		<h5 class='day'>Monday June 25, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Tuesday June 26, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Wednesday June 27, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Thursday June 28, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Friday June 29, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 week='week' id="week_9">Week: 9</h4>
+
+		<h5 class='day'>Monday July 2, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Tuesday July 3, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Wednesday July 4, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Thursday July 5, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Friday July 6, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_10">Week: 10</h4>
+
+		<h5 class='day'>Monday July 9, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Tuesday July 10, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Wednesday July 11, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Thursday July 12, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Friday July 13, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_11">Week: 11</h4>
+
+		<h5 class='day'>Monday July 16, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Tuesday July 17, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Wednesday July 18, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Thursday July 19, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Friday July 10, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+
+		<h3 class='phase' id="phase_3">Phase 3</h3>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_12">Week: 12</h4>
+
+		<h5 class='day'>Monday July 23, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Tuesday July 24, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Wednesday July 25, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Thursday July 26, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Friday July 27, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_13">Week: 13</h4>
+
+		<h5 class='day'>Monday July 30, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Tuesday July 31, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Wednesday August 1, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Thursday August 2, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Friday August 3, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<h4 class='week' id="week_14">Week: 14</h4>
+
+		<h5 class='day'>Monday August 6, 2018:</h3>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Tuesday August 7, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Wednesday August 8, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Thursday August 9, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<h5 class='day'>Friday August 10, 2018:</h5>
+		<ul>
+			<li></li>
+		</ul>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
+
+		<P id='copyright'>
+			Copyright &copy Michael Wright 2018
+		</p>
+	<p>Copyright &copy 2018 JAM</p>
+	</body>
+</html>

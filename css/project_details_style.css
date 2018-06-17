@@ -1,8 +1,8 @@
 
 *{
-	
+
 	font-family: georgia;
-	
+
 }
 
 body{
@@ -18,7 +18,7 @@ body{
 
 p{
 	font-size: 100%;
-	line-height: 2.0;	
+	line-height: 2.0;
 	text-indent: 15px;
 	text-align: justify;
 }
@@ -53,11 +53,10 @@ img{
 	display: block;
 	border: 2px solid blue;
 	box-shadow: 10px 10px 5px gray;
-	
+
 }
 
 figure{
-	
 	border: 2px solid green;
 	border-radius: 25px;
 	margin: auto;
@@ -65,7 +64,7 @@ figure{
 }
 
 figcaption{
-	
+
 	font-style: italic;
 	text-align: center;
 	font-size: 90%;

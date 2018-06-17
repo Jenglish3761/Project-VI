@@ -10,20 +10,10 @@
     	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
     	<link rel="icon" type="image/jpg" href="../docs/img/jam.jpg">
   </head>
-
+  <?php
+  require '../html/navbar.html';
+   ?>
   <body class="border">
-    <iframe
-      width='1000'
-      height='150'
-      allowfullscreen
-      seamless
-      src="../html/header.html"
-          frameborder="0"
-      style="border:0"
-      position: fixed;
-    	top: 0;
-      >
-    </iframe><br />
 
 
     <h1><strong> PROJECT VI - ABOUT</strong></h1>

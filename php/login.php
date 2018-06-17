@@ -1,6 +1,6 @@
 <?php
 $submitted = !empty($_POST);
-require '../html/header.html';
+require '../html/navbar.html';
 ?>
 
 <!DOCTYPE html>
