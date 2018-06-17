@@ -12,17 +12,19 @@
   </head>
 
   <body class="border">
+    <iframe
+      width='1000'
+      height='150'
+      allowfullscreen
+      seamless
+      src="../html/header.html"
+          frameborder="0"
+      style="border:0"
+      position: fixed;
+    	top: 0;
+      >
+    </iframe><br />
 
-	  <iframe
-			width='1000'
-			height='150'
-			allowfullscreen
-			seamless
-			src="../html/header.html"
-	    		frameborder="0"
-			style="border:0"
-			>
-    	</iframe><br />
 
     <h1><strong> PROJECT VI - ABOUT</strong></h1>
 
@@ -57,7 +59,7 @@
 	  <h3>Mike</h3>
        		<p>"I tried to kill ya"</p>
 
-  
+
   <p>Copyright &copy 2018 JAM</p>
   </body>
 </html>

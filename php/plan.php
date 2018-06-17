@@ -8,9 +8,16 @@
   </head>
 
   <body class="border">
-    <?php
-    require '../html/header.html';
-     ?>
+    <iframe
+    	width='1000'
+    	height='150'
+    	allowfullscreen
+    	seamless
+    	src="../html/header.html"
+    			frameborder="0"
+    	style="border:0"
+    	>
+    </iframe><br />
 
     <h1>Project Plan</h1>
     <h2>Breakdown - By Week</h2>
