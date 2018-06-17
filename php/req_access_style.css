@@ -1,0 +1,61 @@
+*{
+	font-family: helvetica;
+  background: beige;
+}
+body{
+	width: 350px;
+	padding: 0px;
+}
+fieldset{
+  display: block;
+  border: 2px solid black;
+  width: 400px;
+  padding: 10px;
+
+
+}
+legend{
+  display: block;
+  border-radius: 25px;
+  background: cyan;
+  padding-left: 2px;
+  padding-right: 2px;
+  color : red;
+
+}
+.txt_area{
+  background-image: url('../img/alex.png');
+  background-position: bottom;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.text_label {
+  float: left;
+	width: 150px;
+	text-align: right;
+	padding: 0px 10px 0px 0px;
+
+}
+.text_input{
+	width: 220px;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+  background: white;
+}
+.submit{
+  color: red;
+  background: cyan;
+  float: right;
+}
+.submit:hover {
+  background-color: white;
+  color: black;
+  border-color: blue;
+}
+.submit:active{
+  background-color : red;
+  color : black;
+  border-color: blue;
+}

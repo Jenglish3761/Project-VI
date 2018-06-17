@@ -25,16 +25,9 @@
   </head>
   <body class = "border">
 
-    <iframe
-			width='1000'
-			height='150'
-			allowfullscreen
-			seamless
-			src="../html/header.html"
-	    		frameborder="0"
-			style="border:0"
-			>
-    	</iframe><br />
+    <?php
+    require '../html/header.html';
+     ?>
 
     <div id='loginPage'>
       <header>

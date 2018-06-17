@@ -8,16 +8,9 @@
   </head>
 
   <body class="border">
-  <iframe
-			width='1000'
-			height='150'
-			allowfullscreen
-			seamless
-			src="../../html/header.html"
-	    		frameborder="0"
-			style="border:0"
-			>
-    </iframe><br /> 
+    <?php
+    require '../html/header.html';
+     ?>
 
     <h1>Project Plan</h1>
     <h2>Breakdown - By Week</h2>
@@ -37,11 +30,11 @@
       <li>Complete fully functioning CAN system</li>
       <li>Oral presentation, final report, and video demonstration</li>
     </ol>
-		  
+
     <h2>Gantt Chart</h2>
-	  
+
 	  <table id="gantt">
-		
+
 			<tr>
 				<th></th>
 				<th>Week 1</th>
@@ -58,10 +51,10 @@
 				<th>Week 12</th>
 				<th>Week 13</th>
 				<th>Week 14</th>
-				
+
 			</tr>
-		
-		
+
+
 			<tr>
 				<th>Set-up Github</th>
 				<td class="ab">AB</td>
@@ -78,14 +71,14 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
-				
+
+
 			</tr>
 			<tr>
 				<th>Design Basic Website</th>
 				<td class="je" colspan="3">JE</td>
-				
-				
+
+
 				<td></td>
 				<td></td>
 				<td></td>
@@ -97,9 +90,9 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
+
 			</tr>
-		  
+
 		  	<tr>
 				<th>Design CAN Protocol</th>
 				<td class="mw">MW</td>
@@ -116,9 +109,9 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
+
 			</tr>
-		  
+
 			<tr>
 				<th>Design one floor node</th>
 				<td></td>
@@ -135,14 +128,14 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
-				
+
+
 			</tr>
 			<tr>
 				<th>Style website with CSS</th>
 				<td></td>
 				<td class="je" colspan="2">JE</td>
-				
+
 				<td></td>
 				<td></td>
 				<td></td>
@@ -154,14 +147,14 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
-				
+
+
 			</tr>
 			<tr>
 				<th>Copy floor nodes</th>
 				<td></td>
 				<td class="multi" colspan="2">AB MW</td>
-				
+
 				<td></td>
 				<td></td>
 				<td></td>
@@ -173,8 +166,8 @@
 				<td></td>
 				<td></td>
 				<td></td>
-			
-				
+
+
 			</tr>
 			<tr>
 				<th>Elevator Node</th>
@@ -192,7 +185,7 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
+
 			</tr>
 			<tr>
 				<th>Pi logic</th>
@@ -210,17 +203,17 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
-				
+
+
 			</tr>
-		  
+
 		  	<tr>
 				<th>Start MySQL repo</th>
 				<td></td>
 				<td></td>
 				<td></td>
 				<td class="je" colspan="2">JE</td>
-				
+
 				<td></td>
 				<td></td>
 				<td></td>
@@ -230,15 +223,15 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
-				
+
+
 			</tr>
 		  	<tr>
 				<th>Develop user interface</th>
 				<td></td>
 				<td></td>
 				<td></td>
-				<td></td>				
+				<td></td>
 				<td class="multi" colspan="2">AB JE MW</td>
 				<td></td>
 				<td></td>
@@ -248,21 +241,21 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				
-				
+
+
 			</tr>
-		  
+
 		  <tfoot>
 			  <tr>
 				  <th>AB = Alex B., JE = Jeff E., MW = Mike W.</th>
 			  </tr>
 		  </tfoot>
 	  </table>
-	  
-	  
-	  
-	  
-    <p>Copyright &copy 2018 JAM</p>      
+
+
+
+
+    <p>Copyright &copy 2018 JAM</p>
   </body>
 
 </html>

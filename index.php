@@ -13,17 +13,10 @@
   </head>
 
   <body class="border">
+<?php
+require 'html/header.html'
+ ?>
 
-	<iframe
-			width='1000'
-			height='150'
-			allowfullscreen
-			seamless
-			src="html/header.html"
-	    		frameborder="0"
-			style="border:0"
-			>
-    </iframe><br />  
 
   	<h1>JAM MAIN MENU</h1>
 
@@ -35,6 +28,6 @@
        		<p><br/><br/>
       		</p>
 
-  <p>Copyright &copy 2018 JAM</p> 
+  <p>Copyright &copy 2018 JAM</p>
   </body>
 </html>
