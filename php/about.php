@@ -9,11 +9,12 @@
 	<meta http-equiv='pragma' content='no-cache' /> <!-- force browser to reload page every time - updates often -->
     	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
     	<link rel="icon" type="image/jpg" href="../docs/img/jam.jpg">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <?php
   require '../html/navbar.html';
    ?>
-  <body class="border">
+  <body>
 
 
     <h1><strong> PROJECT VI - ABOUT</strong></h1>

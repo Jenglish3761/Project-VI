@@ -52,5 +52,5 @@ function checkPassword(e, minlength) {
 }
 
 // Add event listeners to the elements
-elUsername.addEventListener('blur', function() {checkUsername(4)}, false);  // Blur event occurs when user click off this element
+elUsername.addEventListener('blur', function() {checkUsername(7)}, false);  // Blur event occurs when user click off this element
 elPassword.addEventListener('blur', function(e){checkPassword(e, 7)}, false);

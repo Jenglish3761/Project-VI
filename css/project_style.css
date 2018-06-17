@@ -12,6 +12,7 @@ body.border{
 	padding: 10px;
 }
 
+
 #header{
 	display: block;
 	border: 2px solid red;
@@ -72,7 +73,10 @@ a:active.menu{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+p.time{
+	margin-top: 1em;
+	color: red;
+}
 /* IMG qualities */
 
 img{

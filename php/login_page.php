@@ -1,52 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Login Page</title>
+<html lang="en">
+<head>
+  <title>Log In</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<?php require '../html/navbar.html' ?>
+<body>
+<div class="container">
+  <h2>Please Log in</h2>
+  <form class="form-horizontal" action="login.php" method='post' id='login'>
+    <div class="form-group">
+      <label for="user" class="control-label col-sm-2" >Username:</label>
 
-    <meta name='description' content='Logint for project VI' />
-		<meta name='robots' content='index follow' /> <!-- want page and links to be indexed -->
-		<meta http-equiv='author' content='JAM' />
-		<meta http-equiv='pragma' content='no-cache' /> <!-- force browser to reload page every time - updates often -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="../css/project_style.css">
-    <link rel="styleseet" type="text/css" href="../css/req_access_style.css">
-		<!--<link href='../css/project_style.css' type='text/css' rel='stylesheet' />-->
-    <!--[if lt IE 9]>
-      <script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script>
-    <![endif] -->
+      <div class="col-sm-10">
+        <span id='userfeedback'></span>
+        <input id="user" class="form-control" type="text" placeholder="Username" name="username" required autofocus/>
 
-  </head>
-  <?php
-  require '../html/navbar.html';
-   ?>
-  <body>
-  <form action='../php/login.php' method='post' id='login'>
-      <fieldset>
-          <legend>Please Log In</legend>
-            <p><label for='user' class='text_label'>Username:</label>
-            <input id='user' class='text_input' type='text' name='username' required />
-            <span id='userfeedback'></span>
-            </p>
-            <p>
-            <label for='pass' class='text_label'>Password:</label>
-            <input id='pass' class='text_input' type='password' name='password' required />
-            <span id='passwordfeedback'></span>
-            </p>
-          <div>
-            <input class='logmein' type='submit' value='Log in'/>
-          </div>
-        </form>
-      </fieldset>
-
-      <br /><br />
-      <footer>
-        <p id='copyright'>
-          Copyright &copy JAM
-        </p>
-      </footer>
-
+      </div>
     </div>
+    <div class="form-group">
+      <label for="pass" class="control-label col-sm-2" >Password:</label>
+      <div class="col-sm-10">
+        <span id='passwordfeedback'></span>
+        <input id="pass" class="form-control" type="password" placeholder="Enter password" name="password" required>
 
-  <script src='../js/eventListeners.js'></script>
-  </body>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <input class="btn btn-default" type="submit" value='Log in'/>
+      </div>
+    </div>
+  </form>
+  <footer>
+    <p id='copyright'>
+      Copyright &copy JAM
+    </p>
+  </footer>
+</div>
+<script src='../js/eventListeners.js'></script>
+</body>
 </html>

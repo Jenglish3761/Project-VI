@@ -4,15 +4,15 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
+  <link rel="stylesheet" type="text/css" href="../css/project_style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  		<base target="_parent">
+  <base target="_parent">
 </head>
 <body onload="startTime()">
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">JAM Project Website</a>
@@ -21,8 +21,6 @@
       <li class="active"><a href="/Project-VI/index.php">Home</a></li>
       <li><a href="/Project-VI/php/about.php">About</a></li>
       <li><a href="/Project-VI/php/plan.php">Plan</a></li>
-      <li><a href="/Project-VI/php/login_page.php">Login</a></li>
-      <li><a href="/Project-VI/php/request_access.php">Request Access</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Logbooks <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="/Project-VI/docs/logbook/jeff.php">Jeff</a></li>
@@ -30,9 +28,16 @@
           <li><a href="/Project-VI/docs/logbook/mike.php">Mike</a></li>
         </ul>
       </li>
+      <li class="active"><p class="time" id="time">current time: </p></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/Project-VI/php/request_access.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/Project-VI/php/login_page.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
+<br/>
+<br/>
 </body>
 <script>
   function startTime(){

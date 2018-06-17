@@ -10,6 +10,7 @@
 
     	<link rel="stylesheet" type="text/css" href="css/project_style.css">
     	<link rel="icon" type="image/jpg" href="docs/img/jam.jpg">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 
 <?php

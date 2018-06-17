@@ -9,7 +9,7 @@
   <?php
   require '../html/navbar.html';
    ?>
-  <body class="border">
+  <body>
 
     <h1>Project Plan</h1>
     <h2>Breakdown - By Week</h2>
