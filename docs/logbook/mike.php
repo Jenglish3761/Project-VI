@@ -309,7 +309,9 @@
 
 		<h5 class='day'>Monday June 18, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Update logobook.</li>
+			<li>Study for Natural Sciences midterm.</li>
+			<li>Coninue updating Pi to send which direction the elevator car is travelling in.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday June 19, 2018:</h5>
