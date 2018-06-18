@@ -84,7 +84,7 @@
     <p id='copyright'>
       Copyright &copy JAM
     </p>
-    <button type="button" class="btn"><a href='getinfo.php'>See the table</a></button></br>
+<input type="button" onclick="location.href ='getinfo.php';" value="See the table"></button></br>
   </footer>
 </div>
 <script src='../js/eventListeners.js'></script>

@@ -89,7 +89,7 @@ require '../html/navbar.html';
 
 ?>
 </br>
-<button type="button" class="btn"><a href='request_access.php'>Back to previous page</a></button></br>
-<button type="button" class="btn"><a href='getinfo.php'>See the table</a></button></br>
+<input type="button" onclick="location.href ='request_access.php';" value="Back to previous page"></button></br>
+<input type="button" onclick="location.href ='getinfo.php';" value="See the table"></button></br>
 </body>
 </html>
