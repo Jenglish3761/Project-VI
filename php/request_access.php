@@ -54,7 +54,7 @@
       </div>
 
       <h2>Create Username and Password</h2>
-      <form class="form-horizontal" action="login.php" method='post' id='login'>
+
         <div class="form-group">
           <label for="user" class="control-label col-sm-2" >Username:</label>
 
@@ -71,12 +71,12 @@
             <span id='passwordfeedback'></span>
           </div>
         </div>
-      </form>
+
 
       <br/>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <input class="btn btn-success" type="submit" value='Submit'/>
+        <input class="btn btn-success" type="submit" name="submit" value='Submit'/>
       </div>
     </div>
   </form>
