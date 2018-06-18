@@ -231,7 +231,7 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td class="multi" colspan="2">AB JE MW</td>
+				<td class="multi" colspan="3">AB JE MW</td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -240,9 +240,25 @@
 				<td></td>
 				<td></td>
 				<td></td>
-
-
 			</tr>
+
+    </tr>
+      <tr>
+      <th>Added Bootstrap</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="ab" colspan="2">AB</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
 
 		  <tfoot>
 			  <tr>
