@@ -69,20 +69,6 @@
           <div class="col-sm-10">
             <input id="pass" class="form-control" type="password" placeholder="Enter password" name="password" required>
             <span id='passwordfeedback'></span>
-
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox">
-              <label><input type="checkbox" name="remember"> Remember me</label>
-
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <input class="btn btn-success" type="submit" value='Log in'/>
           </div>
         </div>
       </form>
