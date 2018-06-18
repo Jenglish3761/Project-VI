@@ -194,7 +194,7 @@
 				<td class="mw">MW</td>
 				<td></td>
 				<td></td>
-				<td></td>
+				<td class="mw">MW</td>
 				<td></td>
 				<td></td>
 				<td></td>
