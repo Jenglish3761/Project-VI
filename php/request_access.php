@@ -15,7 +15,7 @@
     <div class="form-group">
       <label for="first" class="control-label col-sm-2" >First Name:</label>
       <div class="col-sm-10">
-        <input id="first" class="form-control" type="text" placeholder="First Name" name="first_name" required />
+        <input id="first" class="form-control" type="text" placeholder="First Name" name="first_name" required autofocus/>
       </div>
     </div>
     <!--...To here, is one input-->
@@ -56,7 +56,7 @@
       <br/>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <input class="btn btn-default" type="submit" value='Submit'/>
+        <input class="btn btn-success" type="submit" value='Submit'/>
       </div>
     </div>
   </form>

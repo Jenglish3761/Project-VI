@@ -14,7 +14,7 @@
   <?php
   require '../html/navbar.html';
    ?>
-  <body>
+  <body class="container">
 
 
     <h1><strong> PROJECT VI - ABOUT</strong></h1>
