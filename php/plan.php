@@ -231,7 +231,7 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td class="multi" colspan="3">AB JE MW</td>
+				<td class="multi" colspan="2">AB JE MW</td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -241,6 +241,24 @@
 				<td></td>
 				<td></td>
 			</tr>
+
+    </tr>
+      <tr>
+      <th>Develop user interface</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="je" colspan="1">JE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
 
     </tr>
       <tr>
@@ -259,6 +277,24 @@
       <td></td>
       <td></td>
     </tr>
+  </tr>
+    <tr>
+    <th>Event Listeners</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="multi" colspan="2">AB MW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
 
 		  <tfoot>
 			  <tr>
