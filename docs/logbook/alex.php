@@ -196,6 +196,37 @@ require '../../html/navbar.html';
 			<ul>
 				<li>Data Comm Quiz</li>
 			</ul>
+			<h2>Week 6</h2>
+
+			<h3>June,11/2018</h3>
+				<ul>
+					<li>Install button on floor 2 node</li>
+					<li>Updated floor 2 button to respond to up and down calls</li>
+					<li>Debrief</li>
+				</ul>
+			<h3>June,12/2018</h3>
+				<ul>
+					<li>Helped Jeff with Lights program for elevator tracking</li>
+					<li>Looked up data repo on PI to understand how the node is being read/updated</li>
+				</ul>
+			<h3>June,13/2018</h3>
+				<ul>
+					<li>Study for Thermo quiz</li>
+					<li>Study for Software engineering quiz</li>
+				</ul>
+			<h3>June,14/2018</h3>
+				<ul>
+					<li>Software engineering quiz</li>
+					<li>Thermodynamics quiz</li>
+				</ul>
+			<h3>June,15/2018</h3>
+				<ul>
+					<li>Changed most used html files to php in order to have more functionaltiy</li>
+					<li>Created Navbar using bootstrap techniques</li>
+					<li>Added Navbar to all .php files that need it</li>
+					<li>Updated other files with bootstrap css stlye</li>
+					<li>Re-made Log-in and Request Access page. Using JS event listeners to verify parameters</li>
+				</ul>
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <p>Copyright &copy 2018 JAM</p>
 </body>

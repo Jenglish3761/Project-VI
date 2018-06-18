@@ -2,6 +2,7 @@
   <head>
   <title>Request Made</title>
   <link rel="stylesheet" type="text/css" href="../css/project_style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 <?php
 require '../html/navbar.html';
@@ -88,7 +89,7 @@ require '../html/navbar.html';
 
 ?>
 </br>
-<a href='request_access.php'>Back to previous page</a></br>
-<a href='getinfo.php'>See the table</a>
+<button type="button" class="btn"><a href='request_access.php'>Back to previous page</a></button></br>
+<button type="button" class="btn"><a href='getinfo.php'>See the table</a></button></br>
 </body>
 </html>

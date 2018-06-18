@@ -1,11 +1,13 @@
 <head>
 	<title>GetInfo</title>
 	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <?php
 require '../html/navbar.html';
  ?>
-<body class="border">
+ <br/>
+<body class="container">
 
 <?php
 
