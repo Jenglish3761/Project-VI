@@ -21,7 +21,7 @@
     <!--...To here, is one input-->
     <!--From here...-->
     <div class="form-group">
-      <label for="last" class="control-label col-sm-2" >Password:</label>
+      <label for="last" class="control-label col-sm-2" >Last Name:</label>
       <div class="col-sm-10">
         <input id="last" class="form-control" type="text" placeholder="Last Name" name="last_name" required>
       </div>
