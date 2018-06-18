@@ -314,6 +314,7 @@
 			<li>Coninue updating Pi to send which direction the elevator car is travelling in.</li>
 			<li>Updated sign up page to include username and password field.</li>
 			<li>Updated sign up page to include event listeners.</li>
+			<li>Removed log in button from request access page.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday June 19, 2018:</h5>
