@@ -315,6 +315,8 @@
 			<li>Updated sign up page to include username and password field.</li>
 			<li>Updated sign up page to include event listeners.</li>
 			<li>Removed log in button from request access page.</li>
+			<li>Fixed submit button so data entered appears in database table.</li>
+			<li>Updated Gannt chart.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday June 19, 2018:</h5>
