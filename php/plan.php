@@ -5,11 +5,12 @@
   <head>
     <title>Project Plan</title>
     <link rel="stylesheet" type="text/css" href="../css/project_style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <?php
   require '../html/navbar.html';
    ?>
-  <body>
+  <body class="container">
 
     <h1>Project Plan</h1>
     <h2>Breakdown - By Week</h2>

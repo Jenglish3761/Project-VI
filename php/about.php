@@ -28,7 +28,7 @@
 	    leveraging the use of a CAN bus communications environment,
 	    coupled with networked systems to create a means of tracking the elevators operational/diagnosticsdata.
 	    The elevator cars position and status must also be viewable to computers over the Internet.</p>
-    <p><a href="ProjectDetails.html">Project Details</a></p>
+    <p><a href="ProjectDetails.php">Project Details</a></p>
     <iframe
 			width='450'
 			height='300'

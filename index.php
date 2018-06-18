@@ -34,7 +34,7 @@ require 'html/navbar.html';
 		<img src="docs/img/jam.jpg" alt="jam">
         </figure>
 
-        <h2>Programs</h2>
+        <h2>Welcome</h2>
        		<p><br/><br/>
       		</p>
 

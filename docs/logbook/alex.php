@@ -3,13 +3,14 @@
 	<head>
 		<title>Alexanders's Logbook</title>
 		<link rel="stylesheet" type="text/css" href="../../css/project_style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="icon" type="image/jpg" href="../img/alex.jpg">
   </head>
 
 <?php
 require '../../html/navbar.html';
  ?>
-	<body>
+	<body class="container">
 
 		<h1>Alexander's logbook</h1>
 

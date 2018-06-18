@@ -10,18 +10,13 @@
 
 
 		<link rel="stylesheet" type="text/css" href="../css/project_details_style.css">
+		      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
-	<body>
-		<iframe
-				width='1000'
-				height='150'
-				allowfullscreen
-				seamless
-				src="header.html"
-						frameborder="0"
-				style="border:0"
-				>
-		</iframe><br />
+	<?
+	require '../html/navbar.html';
+	?>
+	<body class="container">
+
 
 		<h1>Project Details</h1>
 		<h2>Project Description</h2>
@@ -107,10 +102,10 @@
 		<h2>Status Report</h2>
 		<embed src="../docs/img/EPVI-Weekly-Status-Report_Week5.pdf" width="930" height="500" type='application/pdf' alt="schematic">
 		<h2>Schematics</h2>
-		
+
 		<h3>Elevator Node</h3>
 		<embed src="../docs/img/Elevator_Node.pdf" width="930" height="500" type='application/pdf' alt="schematic">
-				
+
 		<h3>Floor Node 1</h3>
 		<embed src="../docs/img/Floor_Node_1.pdf" width="930" height="500" type='application/pdf' alt="schematic">
 
