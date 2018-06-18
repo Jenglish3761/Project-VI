@@ -321,7 +321,7 @@
 
 		<h5 class='day'>Tuesday June 19, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Natural Sciences midterm.</li>
 		</ul>
 
 		<h5 class='day'>Wednesday June 20, 2018:</h5>
@@ -336,7 +336,7 @@
 
 		<h5 class='day'>Friday June 22, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Thermodynamics midterm.</li>
 		</ul>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
