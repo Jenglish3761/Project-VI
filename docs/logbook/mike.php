@@ -336,7 +336,7 @@
 
 		<h5 class='day'>Friday June 22, 2018:</h5>
 		<ul>
-			<li>Thermodynamics midterm.</li>
+			<li>Thermodynamics midterm</li>
 		</ul>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
