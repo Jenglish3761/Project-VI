@@ -11,7 +11,7 @@
 <div class="container">
   <h2>Please Log in</h2>
 
-  <form class="form-horizontal" action="authenication.php" method='post' id='login'>
+  <form class="form-horizontal" action="authentication.php" method='post' id='login'>
 
     <div class="form-group">
       <label for="user" class="control-label col-sm-2" >Username:</label>
