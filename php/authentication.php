@@ -20,6 +20,15 @@ while($row = mysqli_fetch_array($response)){ //while data is pulled fill table r
       if(strcmp($row['user'], $_POST['username'] ) == 0 && strcmp($row['pass'], $_POST['password'] == 0)){
         echo 'good';
 
+<<<<<<< HEAD
+=======
+      function redirect('../index.php') {
+        ob_start();
+        header('Location: '.'../index.php');
+        ob_end_flush();
+        die();
+      }
+>>>>>>> 619ed4422d8e88cf373d6e965f5831d58f8a4116
       }
       else{
         echo 'bad';
