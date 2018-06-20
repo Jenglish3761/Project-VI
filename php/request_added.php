@@ -12,6 +12,7 @@ require '../html/navbar.html';
     error_reporting(E_ALL);
     ini_set('display_errors', 1); //error checking
 
+
     if(isset($_POST['submit'])){ //if submit was pressed from request_access.php
 
       $data_missing = array();
@@ -97,7 +98,18 @@ require '../html/navbar.html';
           echo "$missing<br/>";
         }
      }
+
+
+
   }
+
+
+$currentUsers = file_get_contents(__DIR__ . '../json/login.json');
+$currentArray = json_decode($currentUsers, true);
+$currentArray[$key]["user"] = $_POST['user'];
+$currentArray[$key]["pass"] = $_POST['pass'];
+$jsonAdd = json_encode($currentArray, true);
+file_put_contents('../json/login.json',  $jsonAdd, $flags = FILE_APPEND);
 
 ?>
 </br>
