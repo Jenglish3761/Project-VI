@@ -1,24 +1,25 @@
+<!DOCTYPE html>
 <?php
-  /*
-    FUNCTION:
-    PARAMETERS:
-    RETURN:
-    PURPOSE:
-  */
-  function get_authentication(): int{
-    var granted;
-
-    //  Try to open database.
-    try {
-      $db = new PDO('mysql:host=127.0.0.1;dbname=elevator','root','');
-
-    } catch (PDOException $e) { //  If unable to connect.
-      echo $e->getMessage();
-    }
-
-    //  Pull data from database.
 
 
-    return granted;
-  }
- ?>
+require_once('mysqli_connect.php'); //open connection to database from link
+
+$query = "SELECT first_name, last_name, email, birthday, type, time ,user ,pass FROM req_access"; //set query to grab data from req_access table
+
+$response = @mysqli_query($dbc, $query); //store response of query in variable
+
+while($row = mysqli_fetch_array($response)){ //while data is pulled fill table rows
+
+      if(strcmp($row['user'], $_POST['username'] ) == 0 && strcmp($row['pass'], $_POST['password'] == 0)){
+        echo 'good';
+      }
+      else{
+        echo 'bad';
+      }
+
+
+}
+?>
+
+
+<p>Got here </p>
