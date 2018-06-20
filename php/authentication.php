@@ -12,6 +12,7 @@ while($row = mysqli_fetch_array($response)){ //while data is pulled fill table r
 
       if(strcmp($row['user'], $_POST['username'] ) == 0 && strcmp($row['pass'], $_POST['password'] == 0)){
         echo 'good';
+        echo "<a href='../index.php'>Homepage</a>";
       }
       else{
         echo 'bad';
