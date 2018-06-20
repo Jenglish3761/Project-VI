@@ -13,7 +13,7 @@ require '../html/navbar.html';
 
 require_once('mysqli_connect.php'); //open connection to database from link
 
-$query = "SELECT first_name, last_name, email, birthday, type, time FROM req_access"; //set query to grab data from req_access table
+$query = "SELECT first_name, last_name, email, birthday, type, time ,user ,pass FROM req_access"; //set query to grab data from req_access table
 
 $response = @mysqli_query($dbc, $query); //store response of query in variable
 
@@ -27,6 +27,8 @@ if($response){ //if response is not empty print table of values
 				<th>Birthday</th>
 				<th>Type</th>
 				<th>Date Entered</th>
+				<th>User</th>
+				<th>Password</th>
 			</tr>';
 
 			while($row = mysqli_fetch_array($response)){ //while data is pulled fill table rows
@@ -36,8 +38,9 @@ if($response){ //if response is not empty print table of values
 						<td>' . $row['email'] . '</td>
 						<td>' . $row['birthday'] . '</td>
 						<td>' . $row['type'] . '</td>
-						<td>' . $row['time'] . '</td>';
-
+						<td>' . $row['time'] . '</td>
+						<td>' . $row['user'] . '</td>
+						<td>' . $row['pass'] . '</td>';
 				echo '</tr>';
 			}
 

@@ -43,6 +43,18 @@ require '../html/navbar.html';
       } else{
         $birthday = trim($_POST['birthday']);
       }
+      if(empty($_POST['user'])){ //checks if birthday was enetered
+        $data_missing[] = 'Username';
+
+      } else{
+        $user = trim($_POST['user']);
+      }
+      if(empty($_POST['pass'])){ //checks if birthday was enetered
+        $data_missing[] = 'Password';
+
+      } else{
+        $pass = trim($_POST['pass']);
+      }
 
       if(empty($_POST['type'])){ //checks if type was enetered
         $data_missing[] = 'Type';
@@ -55,10 +67,10 @@ require '../html/navbar.html';
       if(empty($data_missing)){ //if no data was missing get ready to send to MySQL
 
         $dbc = new mysqli("localhost","root", "", "elevator"); //opens a database connection
-        $query = "INSERT INTO req_access (first_name, last_name, email, birthday, type, id) VALUES (?,?,?,?,?,NULL)"; //sets our query
+        $query = "INSERT INTO req_access (first_name, last_name, email, birthday, type, user, pass, id) VALUES (?,?,?,?,?,?,?,NULL)"; //sets our query
 
         $stmt = $dbc->prepare($query); //set statement to prepare to send
-        $stmt->bind_param("sssss",$f_name, $l_name, $email, $birthday, $type);
+        $stmt->bind_param("sssssss",$f_name, $l_name, $email, $birthday, $type, $user, $pass);
 
         $stmt->execute();
 

@@ -60,14 +60,14 @@
 
           <div class="col-sm-10">
             <span id='userfeedback'></span>
-            <input id="user" class="form-control" type="text" placeholder="Username" name="username" required autofocus/>
+            <input id="user" class="form-control" type="text" placeholder="Username" name="user" required />
 
           </div>
         </div>
         <div class="form-group">
           <label for="pass" class="control-label col-sm-2" >Password:</label>
           <div class="col-sm-10">
-            <input id="pass" class="form-control" type="password" placeholder="Enter password" name="password" required>
+            <input id="pass" class="form-control" type="password" placeholder="Enter password" name="pass" required>
             <span id='passwordfeedback'></span>
           </div>
         </div>
