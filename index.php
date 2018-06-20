@@ -16,6 +16,8 @@
 <?php
 require 'html/navbar.html';
  ?>
+
+
   <body class="container">
 <!--    <iframe
     	width='1000'

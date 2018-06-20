@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<html>
+
+<?php
+require '../html/navbar.html';
+ ?>
+
+
 <?php
 
 
@@ -12,7 +19,7 @@ while($row = mysqli_fetch_array($response)){ //while data is pulled fill table r
 
       if(strcmp($row['user'], $_POST['username'] ) == 0 && strcmp($row['pass'], $_POST['password'] == 0)){
         echo 'good';
-        echo "<a href="../index.php">Homepage</a>";
+
       }
       else{
         echo 'bad';
@@ -21,6 +28,9 @@ while($row = mysqli_fetch_array($response)){ //while data is pulled fill table r
 
 }
 ?>
-
-
+<p>
+<a href='../index.php'>Homepage</a>
+<a href="/Project-VI/docs/logbook/jeff.php">Jeff</a>
+</p>
 <p>Got here </p>
+</html>
