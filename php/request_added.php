@@ -104,7 +104,7 @@ require '../html/navbar.html';
   }
 
 
-$currentUsers = file_get_contents(__DIR__ . '../json/login.json');
+$currentUsers = file_get_contents(__DIR__ . "../json/login.json");
 $currentArray = json_decode($currentUsers, true);
 $currentArray[$key]["user"] = $_POST['user'];
 $currentArray[$key]["pass"] = $_POST['pass'];
