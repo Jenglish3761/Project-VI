@@ -12,7 +12,7 @@ require '../html/navbar.html';
     error_reporting(E_ALL);
     ini_set('display_errors', 1); //error checking
 
-/*
+
     if(isset($_POST['submit'])){ //if submit was pressed from request_access.php
 
       $data_missing = array();
@@ -103,7 +103,7 @@ require '../html/navbar.html';
 
   }
 
-*/
+
 
 $currentArray["user"] = $_POST['user'];
 $currentArray["pass"] = $_POST['pass'];
