@@ -37,8 +37,9 @@ require 'html/navbar.html';
         </figure>
 
         <h2>Welcome</h2>
-       		<p><br/><br/>
-      		</p>
+       		<p><br/><br/></p>
+          <p><a href="/Project-VI/docs/Assignments/assignment1_answers.php">Assignment 1 page</a></p>
+
 
   <p>Copyright &copy 2018 JAM</p>
   </body>

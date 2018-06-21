@@ -1,11 +1,9 @@
 
 *{
-
 	font-family: georgia;
-
 }
-/*
-body{
+
+body.border{
 	display:block;
 	border: 2px solid black;
 	width: 950px;
@@ -13,7 +11,7 @@ body{
 	margin-right: auto;
 	padding: 10px;
 }
-*/
+
 /* TEXT qualties */
 
 p{

@@ -7,17 +7,12 @@
 		<meta name="robots" content="noindex nofollow" />  <!-- do not want page or any of its links to be indexed -->
 		<meta http-equiv="author" content="JAM" />
 		<meta http-equiv="pragma" content="no-cache" /> <!-- want browser to reload this page every time -->
-
-
-		<link rel="stylesheet" type="text/css" href="../css/project_details_style.css">
-		      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<?
 	require '../html/navbar.html';
 	?>
-	<body class="container">
-
-
+	<link rel="stylesheet" type="text/css" href="../css/project_details_style.css">
+	<body class="border">
 		<h1>Project Details</h1>
 		<h2>Project Description</h2>
 		<p>The overall project plan (to be completed in <span class="mkunderlined">3 phases</span>) is to build and control an elevator, leveraging the use of a CAN bus communications environment, coupled with networked systems to create a means of tracking the elevator's operational/diagnostics data. The elevator car's position and status must also be viewable to computers over the Internet.  See the system diagram, below.
