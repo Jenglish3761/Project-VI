@@ -6,10 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<?php require '../html/navbar.html' ?>
+<?php require '../html/navbar.html';
+?>
 <body>
 <div class="container">
   <h2>Please Log in</h2>
+  <?php
+      if(isset($_COOKIE['access']) && $_COOKIE['access'] == -1)  {
+        echo "<p>" . "Invalid username and password combination!" . "<p>";
+      }
+      setcookie('access', 1);
+  ?>
 
   <form class="form-horizontal" action="authentication.php" method='post' id='login'>
 

@@ -1,10 +1,1 @@
-[
-  {
-    "user": "Admin",
-    "pass": "JamAdmin2018"
-  },
-  {
-    "user": "mwright",
-    "pass": "Cc7218928"
-  }
-]
+[{"user":"Admin","pass":"JamAdmin2018"},{"user":"mwright","pass":"Cc7218928"},{"user":"Jdoe.json","pass":"JohnDoe1"},{"user":"mwright8928","pass":"Cc7218928"},{"user":"abradley8885","pass":"aPASSWORD4"},{"user":"TestJason","pass":"jasontesT1"}]

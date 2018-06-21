@@ -32,16 +32,24 @@ require '../html/navbar.html';
       }
 */
 
-  //  Get username and password contents.
-  $users = file_get_contents('../json/login.json');
-  //  Convert file contents to array.
-  $userArray = json_decode($users, true);
-  foreach ($userArray as $userAndPass) {
-    echo "Username: " . $userAndPass["user"] . ", Password: " . $userAndPass["pass"] . "<br />";
-    if(strcmp($userAndPass["user"], $_POST['username']) == 0 && strcmp($userAndPass["pass"], $_POST['password']) == 0)  {
-      echo "Access granted!" . "<br />";
-      header('Location: ../index.php');
-    }
+//  Get username and password contents.
+$users = file_get_contents('../json/login.json');
+//  Convert file contents to array.
+$userArray = json_decode($users, true);
+$accessGranted = -1;
+foreach ($userArray as $userAndPass) {
+  echo "Username: " . $userAndPass["user"] . ", Password: " . $userAndPass["pass"] . "<br />";
+  if(strcmp($userAndPass["user"], $_POST['username']) == 0 && strcmp($userAndPass["pass"], $_POST['password']) == 0)  {
+    $accessGranted = 1;
+    setcookie('access', $accessGranted);
+    echo "Access Granted!" . "<br />";
+    header('Location: ../index.php');
   }
+}
+if($accessGranted == -1) {
+  header('Location: ../php/login_page.php');
+  setcookie('access', $accessGranted);
+}
+
 
 ?>
