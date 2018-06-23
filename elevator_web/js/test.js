@@ -19,7 +19,7 @@ function showFloor(){
 		}
 	};
 		
-		request.open("GET", "../getfloor.php?q=", true);
+		request.open("GET", "/elevator_web/getfloor.php?q=", true);
 		request.send();
 }
 
