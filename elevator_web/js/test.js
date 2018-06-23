@@ -1,6 +1,5 @@
- window.onload=showFloorInterval(750);
- window.onload=showFloor();
-
+window.onload=showFloorInterval(750);
+window.onload=showFloor();
 
 function showFloor(){
 
