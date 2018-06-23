@@ -31,19 +31,19 @@
 		<h2>Links</h2>
 
 			<ul>
-				<li><a href="jeff.html#phase1">Phase 1</a></li>
+				<li><a href="#phase1">Phase 1</a></li>
 				<ul>
-					<li><a href="jeff.html#week1">Week 1</a></li>
-					<li><a href="jeff.html#week2">Week 2</a></li>
-					<li><a href="jeff.html#week3">Week 3</a></li>
-					<li><a href="jeff.html#week4">Week 4</a></li>
+					<li><a href="#week1">Week 1</a></li>
+					<li><a href="#week2">Week 2</a></li>
+					<li><a href="#week3">Week 3</a></li>
+					<li><a href="#week4">Week 4</a></li>
 				</ul>
-				<li><a href="jeff.html#phase2">Phase 2</a></li>
+				<li><a href="#phase2">Phase 2</a></li>
 				<ul>
-					<li><a href="jeff.html#week5">Week 5</a></li>
-					<li><a href="jeff.html#week6">Week 6</a></li>
-					<li><a href="jeff.html#week7">Week 7</a></li>
-					<li><a href="jeff.html#week8">Week 8</a></li>
+					<li><a href="#week5">Week 5</a></li>
+					<li><a href="#week6">Week 6</a></li>
+					<li><a href="#week7">Week 7</a></li>
+					<li><a href="#week8">Week 8</a></li>
 				</ul>
 		</ul>
 
