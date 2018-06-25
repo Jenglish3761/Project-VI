@@ -243,7 +243,7 @@
 				<td></td>
 			</tr>
 
-    </tr>
+    
       <tr>
       <th>Added Bootstrap</th>
       <td></td>
@@ -260,7 +260,7 @@
       <td></td>
       <td></td>
     </tr>
-  </tr>
+  
     <tr>
     <th>Event Listeners</th>
     <td></td>
@@ -271,6 +271,71 @@
     <td class="multi" colspan="2">AB MW</td>
     <td></td>
     <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+	
+    <tr>
+    <th>Elevator Database</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="je" colspan="2">JE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<tr>
+    <th>Set up sessions</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="ab" colspan="2">AB</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Change getinfo using Json </th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="mw" >MW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+	tr>
+    <th>Elevator Database</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="mw" >MW</td>
     <td></td>
     <td></td>
     <td></td>
