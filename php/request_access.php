@@ -82,10 +82,11 @@
     </div>
 
     <div class="form-group">
-      <label for="comment">Comment:</label>
-      <textarea id="comment" class="form-control" rows="5" maxlength="20" placeholder="Enter your comment here...">
-      </textarea>
       <span id='commentfeedback'></span>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" class="form-control" rows="5" maxlength="180" placeholder="Enter your comment here..."></textarea>
+
+
     </div>
 
   </form>

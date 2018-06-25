@@ -1,3 +1,6 @@
+<?php
+session_start();
+ ?>
 <!DOCTYPE html>
 
 <html>
@@ -31,12 +34,20 @@ require 'html/navbar.html';
     </iframe><br />-->
 
   	<h1>JAM MAIN MENU</h1>
+    <?php
+    if(isset($_SESSION['username'])){
+    	echo "<h3>Welcome, " . $_SESSION['username'] . "!</h3><br/>";
+    }
+    else{
+    	echo"<h4>You are not logged in yet. Please log in using the button at the top right.</h4>";
+
+    }
+    ?>
 
 	<figure>
 		<img src="docs/img/jam.jpg" alt="jam">
-        </figure>
+  </figure>
 
-        <h2>Welcome</h2>
        		<p><br/><br/></p>
           <p><a href="/Project-VI/docs/Assignments/assignment1_answers.php">Assignment 1 page</a></p>
 

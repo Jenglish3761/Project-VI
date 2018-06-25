@@ -45,7 +45,7 @@
       		<p>3rd year ESE student at Conestoga College</p>
 
 	  <h3>Alex</h3>
-	  	<p>"The best team member"</p>
+	  	    <p>"The best team member"</p>
 
 	  <h3>Mike</h3>
        		<p>"I tried to kill ya"</p>

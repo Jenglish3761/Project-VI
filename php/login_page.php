@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 <?php require '../html/navbar.html';
 ?>
@@ -51,7 +53,15 @@
       </div>
     </div>
   </form>
+  <?php
+
+  if(isset($_SESSION['username'])){
+    //echo "<button onclick='logout()' id='myBtn' title='Logout'>Logout</button>";
+    echo "<a href='/Project-VI/php/logout.php' class='btn btn-danger' role='button'>Logout</a>";
+  }
+  ?>
   <footer>
+
     <p id='copyright'>
       Copyright &copy JAM
     </p>
