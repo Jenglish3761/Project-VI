@@ -322,16 +322,22 @@
 		<h5 class='day'>Tuesday June 19, 2018:</h5>
 		<ul>
 			<li>Natural Sciences midterm.</li>
+			<li>Work at applied research lab.</li>
+			<li>Start work on .json database.</li>
 		</ul>
 
 		<h5 class='day'>Wednesday June 20, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Update .json database.</li>
+			<li>create json functions to add to database and check database.</li>
 		</ul>
 
 		<h5 class='day'>Thursday June 21, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Add check to login page using username and password from json database.</li>
+			<li>Create authentication page.</li>
+			<li>Add invalid username or password warning to login upon unsucessfull login try.</li>
+			<li>Add cookies to check for invalid login on authentication page.</li>
 		</ul>
 
 		<h5 class='day'>Friday June 22, 2018:</h5>
@@ -345,7 +351,8 @@
 
 		<h5 class='day'>Monday June 25, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Add session check on login.</li>
+			<li>Added elevator control access on login.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday June 26, 2018:</h5>
