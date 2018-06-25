@@ -31,19 +31,19 @@
 		<h2>Links</h2>
 
 			<ul>
-				<li><a href="jeff.html#phase1">Phase 1</a></li>
+				<li><a href="#phase1">Phase 1</a></li>
 				<ul>
-					<li><a href="jeff.html#week1">Week 1</a></li>
-					<li><a href="jeff.html#week2">Week 2</a></li>
-					<li><a href="jeff.html#week3">Week 3</a></li>
-					<li><a href="jeff.html#week4">Week 4</a></li>
+					<li><a href="#week1">Week 1</a></li>
+					<li><a href="#week2">Week 2</a></li>
+					<li><a href="#week3">Week 3</a></li>
+					<li><a href="#week4">Week 4</a></li>
 				</ul>
-				<li><a href="jeff.html#phase2">Phase 2</a></li>
+				<li><a href="#phase2">Phase 2</a></li>
 				<ul>
-					<li><a href="jeff.html#week5">Week 5</a></li>
-					<li><a href="jeff.html#week6">Week 6</a></li>
-					<li><a href="jeff.html#week7">Week 7</a></li>
-					<li><a href="jeff.html#week8">Week 8</a></li>
+					<li><a href="#week5">Week 5</a></li>
+					<li><a href="#week6">Week 6</a></li>
+					<li><a href="#week7">Week 7</a></li>
+					<li><a href="#week8">Week 8</a></li>
 				</ul>
 		</ul>
 
@@ -349,8 +349,8 @@
 			<h3>Monday June,11/2018</h3>
 
 				<ul>
-					<li></li>
-
+					<li>Worked on creating a page to set elevator floor from databse</li>
+					<li>Should be able to update all instances automatically</li>
 
 
 				</ul>
@@ -358,21 +358,22 @@
 			<h3>Tuesday June,12/2018</h3>
 
 				<ul>
-					<li></li>
-
+					<li>Created a working model on local computer with the ability to change database entries and update page contents on refresh</li>
+					<li>Needs manual refresh at the moment</li>
 				</ul>
 
 			<h3>Wednesday June,13/2018</h3>
 
 				<ul>
-					<li></li>
+					<li>Put objects being updated in an iFrame that refreshes every 5secs</li>
+					<li>This method is choppy and slow to update, refining needed</li>
 
 				</ul>
 
 			<h3>Thursday June,14/2018</h3>
 
 				<ul>
-					<li></li>
+					<li>Off</li>
 
 				</ul>
 
@@ -398,8 +399,121 @@
 
 
 				</ul>
+		<h2 id="week7">Week 7</h2>
 
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<h3>Monday June,18/2018</h3>
+
+				<ul>
+					<li>Started researching Ajax calls to refresh elevator page</li>
+					
+
+
+				</ul>
+
+			<h3>Tuesday June,19/2018</h3>
+
+				<ul>
+					<li>Updated elevator page to include ajax calls</li>
+					<li>Page no longer needs refresh or iFrames, no flashing, faster updates</li>
+				</ul>
+
+			<h3>Wednesday June,20/2018</h3>
+
+				<ul>
+					<li>Cleaned up elevator page</li>
+					<li>Added comments to elevator page</li>
+					
+
+				</ul>
+
+			<h3>Thursday June,21/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+				</ul>
+
+			<h3>Friday June,22/2018</h3>
+
+				<ul>
+					<li>Moved elevator page to server with rest of code</li>
+					<li>Changed navbar timeStart() to window.onload to fix conflict with elevator scripts</li>
+
+				</ul>
+
+			<h3>Saturday June,23/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+
+			<h3>Sunday June,24/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+		<h2 id="week8">Week 8</h2>
+
+			<h3>Monday June,25/2018</h3>
+
+				<ul>
+					<li></li>
+					
+
+
+				</ul>
+
+			<h3>Tuesday June,26/2018</h3>
+
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+
+			<h3>Wednesday June,27/2018</h3>
+
+				<ul>
+					<li></li>
+					<li></li>
+					
+
+				</ul>
+
+			<h3>Thursday June,28/2018</h3>
+
+				<ul>
+					<li></li>
+
+				</ul>
+
+			<h3>Friday June,29/2018</h3>
+
+				<ul>
+					<li></li>
+
+				</ul>
+
+			<h3>Saturday June,30/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+
+			<h3>Sunday July,1/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+
+	
 
 
 <p>Copyright &copy 2018 Jeff</p>

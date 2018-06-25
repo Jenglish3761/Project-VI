@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <base target="_parent">
 </head>
-<body onload="startTime()">
+<body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -35,7 +35,7 @@
         </ul>
       </li>
       <li class="active"><p stlye='font-family="georgia"' class="time" id="time">current time: </p></li>
-      <li class="inactive"><a href="#">Elevator Control</a></li>
+      <li class="inactive"><a href="/Project-VI/elevator_web/elevator.php">Elevator Control</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignments <span class="caret"></span></a>
@@ -52,6 +52,7 @@
 <br/>
 </body>
 <script>
+window.onload=startTime();
   function startTime(){
     var time = new Date();
     var h = time.getHours();
