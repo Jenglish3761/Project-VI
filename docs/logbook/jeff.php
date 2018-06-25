@@ -437,6 +437,7 @@
 
 				<ul>
 					<li>Moved elevator page to server with rest of code</li>
+					<li>Changed navbar timeStart() to window.onload to fix conflict with elevator scripts</li>
 
 				</ul>
 
@@ -449,6 +450,62 @@
 				</ul>
 
 			<h3>Sunday June,24/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+		<h2 id="week8">Week 8</h2>
+
+			<h3>Monday June,25/2018</h3>
+
+				<ul>
+					<li></li>
+					
+
+
+				</ul>
+
+			<h3>Tuesday June,26/2018</h3>
+
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+
+			<h3>Wednesday June,27/2018</h3>
+
+				<ul>
+					<li></li>
+					<li></li>
+					
+
+				</ul>
+
+			<h3>Thursday June,28/2018</h3>
+
+				<ul>
+					<li></li>
+
+				</ul>
+
+			<h3>Friday June,29/2018</h3>
+
+				<ul>
+					<li></li>
+
+				</ul>
+
+			<h3>Saturday June,30/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+
+			<h3>Sunday July,1/2018</h3>
 
 				<ul>
 					<li>Off</li>
