@@ -196,37 +196,69 @@ require '../../html/navbar.html';
 			<ul>
 				<li>Data Comm Quiz</li>
 			</ul>
-			<h2>Week 6</h2>
+		<h2>Week 6</h2>
 
-			<h3>June,11/2018</h3>
-				<ul>
-					<li>Install button on floor 2 node</li>
-					<li>Updated floor 2 button to respond to up and down calls</li>
-					<li>Debrief</li>
-				</ul>
-			<h3>June,12/2018</h3>
-				<ul>
-					<li>Helped Jeff with Lights program for elevator tracking</li>
-					<li>Looked up data repo on PI to understand how the node is being read/updated</li>
-				</ul>
-			<h3>June,13/2018</h3>
-				<ul>
-					<li>Study for Thermo quiz</li>
-					<li>Study for Software engineering quiz</li>
-				</ul>
-			<h3>June,14/2018</h3>
-				<ul>
-					<li>Software engineering quiz</li>
-					<li>Thermodynamics quiz</li>
-				</ul>
-			<h3>June,15/2018</h3>
-				<ul>
-					<li>Changed most used html files to php in order to have more functionaltiy</li>
-					<li>Created Navbar using bootstrap techniques</li>
-					<li>Added Navbar to all .php files that need it</li>
-					<li>Updated other files with bootstrap css stlye</li>
-					<li>Re-made Log-in and Request Access page. Using JS event listeners to verify parameters</li>
-				</ul>
+		<h3>June,11/2018</h3>
+			<ul>
+				<li>Install button on floor 2 node</li>
+				<li>Updated floor 2 button to respond to up and down calls</li>
+				<li>Debrief</li>
+			</ul>
+		<h3>June,12/2018</h3>
+			<ul>
+				<li>Helped Jeff with Lights program for elevator tracking</li>
+				<li>Looked up data repo on PI to understand how the node is being read/updated</li>
+			</ul>
+		<h3>June,13/2018</h3>
+			<ul>
+				<li>Study for Thermo quiz</li>
+				<li>Study for Software engineering quiz</li>
+			</ul>
+		<h3>June,14/2018</h3>
+			<ul>
+				<li>Software engineering quiz</li>
+				<li>Thermodynamics quiz</li>
+			</ul>
+		<h3>June,15/2018</h3>
+			<ul>
+				<li>Changed most used html files to php in order to have more functionaltiy</li>
+				<li>Created Navbar using bootstrap techniques</li>
+				<li>Added Navbar to all .php files that need it</li>
+				<li>Updated other files with bootstrap css stlye</li>
+				<li>Re-made Log-in and Request Access page. Using JS event listeners to verify parameters</li>
+			</ul>
+		<h2>Week 8</h2>
+
+		<h3>June,18/2018</h3>
+			<ul>
+				<li>Updated status report</li>
+				<li>Debrief</li>
+				<li>Study for Biology Midterm</li>
+			</ul>
+		<h3>June,19/2018</h3>
+			<ul>
+				<li>Biology Midterm</li>
+				<li>Started authentication for log-in page</li>
+				
+			</ul>
+		<h3>June,20/2018</h3>
+			<ul>
+				<li>Write Biology Midterm</li>
+				<li>Started using JSON for authentication (Mike)</li>
+			</ul>
+		<h3>June,21/2018</h3>
+			<ul>
+				<li>Study for Thermodynamics Midterm</li>
+				<li>Completed JSON for authentication (Mike)</li>
+			</ul>
+		<h3>June,22/2018</h3>
+			<ul>
+				<li>Add elevator control page to website with Jeff</li>
+			</ul>
+		<h3>June,25/2018</h3>
+			<ul>
+				<li>Update website with sessions so elevator control can only be accessed while logged in</li>
+			</ul>
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <p>Copyright &copy 2018 JAM</p>
 </body>
