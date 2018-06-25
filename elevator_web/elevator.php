@@ -1,6 +1,17 @@
 
 <?php
+session_start();
+
+
 include '../html/navbar.html';
+if(isset($_SESSION['username'])){
+	echo "<br/>welcome, " . $_SESSION['username'] . "!<br/>";
+}
+else{
+	header("location: /Project-VI/index.php");
+	exit();
+}
+
 	/*
 	Function: update
 	Parameters: new floor

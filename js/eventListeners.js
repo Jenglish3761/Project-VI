@@ -4,8 +4,10 @@
 // Select the DOM elements
 var elUsername = document.getElementById('user'); // form text input
 var elPassword = document.getElementById('pass'); // form text input
+var elTextarea = document.getElementById('comment'); // form text input
 var elUsernameMsg = document.getElementById('userfeedback'); // Text feedback on user name input
 var elPasswordMsg = document.getElementById('passwordfeedback')// Text feedback on password input
+var elTextareaMsg = document.getElementById('commentfeedback')// Text feedback on password input
 
 // Functions to call
 function checkUsername(minlength) {   // Function with parameter, without event object passed
@@ -18,6 +20,7 @@ function checkUsername(minlength) {   // Function with parameter, without event 
 
   }
 }
+
 
 function checkPassword(e, minlength) {
   var i = 0;
@@ -50,7 +53,18 @@ function checkPassword(e, minlength) {
     elPasswordMsg.innerHTML = ''; // Clear any previous error message
   }
 }
+function checkTextarea(maxlength) {   // Function with parameter, without event object passed
+  if(elTextarea.value.length > maxlength) {
+    elTextareaMsg.innerHTML = 'max ' + minlength.toString() + ' characters';
+  } else if (elTextarea.value.length < maxlength && elUsername.value.length > 0){
+    elTextareaMsg.innerHTML = 'OK'; // OK message
+  } else {
+    elTextareaMsg.innerHTML = ''; // Clear any previous error message
+
+  }
+}
 
 // Add event listeners to the elements
 elUsername.addEventListener('blur', function() {checkUsername(7)}, false);  // Blur event occurs when user click off this element
 elPassword.addEventListener('blur', function(e){checkPassword(e, 7)}, false);
+elTextarea.addEventListener('blur', function() {checkTextarea(20)}, false);  // Blur event occurs when user click off this element

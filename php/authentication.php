@@ -5,7 +5,7 @@ require '../html/navbar.html';
 <br/>
 <br/>
 <?php
-
+  session_start();
 /*
   require_once('mysqli_connect.php'); //open connection to database from link
 
@@ -42,6 +42,7 @@ foreach ($userArray as $userAndPass) {
   if(strcmp($userAndPass["user"], $_POST['username']) == 0 && strcmp($userAndPass["pass"], $_POST['password']) == 0)  {
     $accessGranted = 1;
     setcookie('access', $accessGranted);
+    $_SESSION['username']=$_POST['username'];
     echo "Access Granted!" . "<br />";
     header('Location: ../index.php');
   }

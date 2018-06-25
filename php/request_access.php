@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,12 +80,29 @@
         <input class="btn btn-success" type="submit" name="submit" value='Submit'/>
       </div>
     </div>
+
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea id="comment" class="form-control" rows="5" maxlength="20" placeholder="Enter your comment here...">
+      </textarea>
+      <span id='commentfeedback'></span>
+    </div>
+
   </form>
   <footer>
     <p id='copyright'>
       Copyright &copy JAM
     </p>
-<input type="button" onclick="location.href ='getinfo.php';" value="See the table"></button></br>
+<?php
+
+if(isset($_SESSION['username'])){
+  echo "<a href='/Project-VI/php/getinfo.php' class='btn btn-danger' role='button'>See the table</a>";
+  exit();
+}
+else{
+  exit();
+}
+?>
   </footer>
 </div>
 <script src='../js/eventListeners.js'></script>
