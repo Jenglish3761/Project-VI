@@ -325,23 +325,9 @@
     <td></td>
     <td></td>
     <td></td>
-  </tr>
-	tr>
-    <th>Elevator Database</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="mw" >MW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
     <td></td>
   </tr>
+	
 
 
 		  <tfoot>
