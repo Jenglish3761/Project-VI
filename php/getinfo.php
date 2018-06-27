@@ -10,47 +10,72 @@ require '../html/navbar.html';
 <body class="container">
 
 <?php
-
+$c = 0;
 require_once('mysqli_connect.php'); //open connection to database from link
 
-$query = "SELECT first_name, last_name, email, birthday, type, time ,user ,pass FROM req_access"; //set query to grab data from req_access table
+$query = "SELECT*FROM req_access";
+//$query = "SELECT first_name, last_name, email, birthday, type, time ,user ,pass FROM req_access"; //set query to grab data from req_access table
 
 $response = @mysqli_query($dbc, $query); //store response of query in variable
-
+echo '<form action="getinfo.php" method="POST">';
 if($response){ //if response is not empty print table of values
+	echo '<table class="table table-striped table-dark">
+  	<thead>
+    	<tr>
+				<th scope="col"></th>
+				<th scope="col">#</th>
+      	<th scope="col">First Name</th>
+      	<th scope="col">Last Name</th>
+      	<th scope="col">Email</th>
+      	<th scope="col">Birthdate</th>
+				<th scope="col">Type</th>
+				<th scope="col">Date Entered</th>
+				<th scope="col">User</th>
+				<th scope="col">Password</th>
+    	</tr>
+  	</thead>
+		';
 
-	echo '<table id="gantt" align="left">
-			<tr>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>Email</th>
-				<th>Birthday</th>
-				<th>Type</th>
-				<th>Date Entered</th>
-				<th>User</th>
-				<th>Password</th>
-			</tr>';
 
-			while($row = mysqli_fetch_array($response)){ //while data is pulled fill table rows
-				echo '<tr>
-						<td>' . $row['first_name'] . '</td>
-						<td>' . $row['last_name'] . '</td>
-						<td>' . $row['email'] . '</td>
-						<td>' . $row['birthday'] . '</td>
-						<td>' . $row['type'] . '</td>
-						<td>' . $row['time'] . '</td>
-						<td>' . $row['user'] . '</td>
-						<td>' . $row['pass'] . '</td>';
-				echo '</tr>';
-			}
 
-		echo '</table>';
+	echo '<tbody>';
+		while($row = mysqli_fetch_array($response)){ //while data is pulled fill table rows
+			$c += 1;
+			echo
+				'<tr>
+				<th scope="row"><button class="btn btn-danger" onclick="delete('.$c.')" name="del'.$c.'" value="Delete"/></button></th>
+					<td>' . $row['id'] . '</td>
+					<td>' . $row['first_name'] . '</td>
+					<td>' . $row['last_name'] . '</td>
+					<td>' . $row['email'] . '</td>
+					<td>' . $row['birthday'] . '</td>
+					<td>' . $row['type'] . '</td>
+					<td>' . $row['time'] . '</td>
+					<td>' . $row['user'] . '</td>
+					<td>' . $row['pass'] . '</td>';
+			echo '</tr>';
+		}
+		echo '</tbody>
+			</table>';
+
 } else{
 	echo "Couldn't issue database query";
 	echo mysqli_error($dbc);
 
 }
-
+echo'</form>';
 mysqli_close($dbc);
+
+function delete(int $c){
+	$db = new PDO('mysql:host=127.0.0.1;dbname=elevator', 'root', '');
+
+	$query = "DELETE FROM req_access WHERE id=del";
+	$stmt = $db->prepare($query);
+	$stmt->bindvalue('del', $c);
+
+	$stmt->execute();
+
+}
+
 ?>
 </body>
