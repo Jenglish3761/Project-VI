@@ -67,13 +67,17 @@ int main()	{
 		//	Check if queue is empty. If not empty process message.
 		//	If queue is empty returns non zero.
 		if(isQueueEmpty() == 0)	{
-			switch (pNode.senderId)	{
-				case :
-				break;
-				case:
-				break;
-				case
+
+			//	Exclude if senderId == currentFloor (does not need to move if
+			//	already on current floor).
+			if(pNode.senderId < currentFloor)	{	//	Down request has been recieved.
+
+
+			} else if (pNode.senderId > currentFloor)	{	//	Up request has been recieved.
+
+
 			}
+
 		} else {
 			// No requests, elevator idle.
 			printf("\nElevator idle.");
