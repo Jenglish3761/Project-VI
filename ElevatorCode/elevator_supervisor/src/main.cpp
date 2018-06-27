@@ -57,12 +57,19 @@ int main()	{
 		//	Get CAN bus message.
 		Rxmsg = pcanRx(1);
 
-		// Add new message to queue.
-		pNode = (link)malloc(sizeof(node));
-		pNode.senderId = Rxmsg.ID
-		pNode.recieverId = 0x100;
-		pNode.message = Rxmsg.DATA[0];
-		addToQueue(pNode);
+		//	Check if message is floor update.
+		if(Rxmsg.ID != MOTOR_ID)	{
+			// 	Add new message to queue.
+			pNode = (link)malloc(sizeof(node));
+			pNode.senderId = Rxmsg.ID
+			pNode.recieverId = 0x100;
+			pNode.message = Rxmsg.DATA[0];
+			addToQueue(pNode);
+		} else {
+			// Message is current floor update.
+			// Do not add to queue, update currentFloor.
+			currentFloor = Rxmsg.DATA[0];
+		}
 
 		//	Check if queue is empty. If not empty process message.
 		//	If queue is empty returns non zero.
@@ -71,10 +78,12 @@ int main()	{
 			//	Exclude if senderId == currentFloor (does not need to move if
 			//	already on current floor).
 			if(pNode.senderId < currentFloor)	{	//	Down request has been recieved.
+				//	Move elevator to requested floor.
+				pcanTx(ID, pNode.message);
 
 
 			} else if (pNode.senderId > currentFloor)	{	//	Up request has been recieved.
-
+				//	Move elevator to requested floor.
 
 			}
 
