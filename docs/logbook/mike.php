@@ -357,7 +357,9 @@
 
 		<h5 class='day'>Tuesday June 26, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Add queue code to elevator supervisor.</li>
+			<li>Add new CAN messages to queue.</li>
+			<li>Read CAN messages from queue instead of directly from RxMsg.</li>
 		</ul>
 
 		<h5 class='day'>Wednesday June 27, 2018:</h5>
