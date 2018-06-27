@@ -4,9 +4,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdlib.h>  
+#include <stdlib.h>
 #include <errno.h>
-#include <unistd.h> 
+#include <unistd.h>
 #include <signal.h>
 #include <string.h>
 #include <fcntl.h>		// O_RDWR
@@ -14,15 +14,25 @@
 #include <ctype.h>
 #include <libpcan.h>	// PCAN library
 #include <pcan.h>
+#include "queue.h"
+#include "node.h"
 
 #define MOTOR_ID 0x101
 
 
 int main()	{
 
+	//	Create a pointer to node and initialize the queue.
+	Node *pNode;
+	initialQueue();
+
+	//	Set up can.
 	TPCANMsg Rxmsg;
-	int ID = 0x100; // Set transmit ID to 100 hex.
+	int ID = 0x100;	//	Set transmit ID to 100 hex.
 	int enable = 0;
+
+
+	//	Loop forever.
 	for (;;)	{
 		Rxmsg = pcanRx(1);
 		printf("Enabled = 1, Disabled = 0  :  %d", enable);
@@ -35,29 +45,29 @@ int main()	{
 					pcanTx(ID, Rxmsg.DATA[0]);
 					enable = 0;
 				break;
-					
-				// Floor 2.
+
+				//	Floor 2.
 				case 0x6 :
 					pcanTx(ID, Rxmsg.DATA[0]);
 					enable = 0;
 				break;
-				
-				// Floor 3.
+
+				//	Floor 3.
 				case 0x7 :
 					pcanTx(ID, Rxmsg.DATA[0]);
 					enable = 0;
 				break;
 			}
 		 }
-		 //open and close elevator
+		 //	Open and close elevator
 		 if(Rxmsg.DATA[0] == 0x8){
 			enable = 1;
-			
+
 		 }else if (Rxmsg.DATA[0] == 0x9){
 			enable = 0;
 		 }
-		 
+
 		}
 	}
-	
+
 }
