@@ -52,35 +52,36 @@ int main()	{
 		addToQueue(pNode);
 
 		//	Check if queue is empty. If not empty process message.
+		//	If queue is empty returns non zero.
 		if(isQueueEmpty() == 0)	{
 			printf("Enabled = 1, Disabled = 0  :  %d", enable);
-			if ((int)Rxmsg.ID != MOTOR_ID)	{
+			if ((int)pNode.senderId != MOTOR_ID)	{
 				if(enable == 1)	{
-					switch (Rxmsg.DATA[0])	{
+					switch (pNode.message)	{
 						//	Floor 1.
 						case 0x5 :
-							pcanTx(ID, Rxmsg.DATA[0]);
+							pcanTx(ID, pNode.message);
 							enable = 0;
 						break;
 
 						//	Floor 2.
 						case 0x6 :
-							pcanTx(ID, Rxmsg.DATA[0]);
+							pcanTx(ID, pNode.message);
 							enable = 0;
 						break;
 
 						//	Floor 3.
 						case 0x7 :
-							p	canTx(ID, Rxmsg.DATA[0]);
+							p	canTx(ID, pNode.message);
 							enable = 0;
 						break;
 					}
 
 
 					//	Open and close elevator
-					if(Rxmsg.DATA[0] == 0x8)	{
+					if(pNode.message == 0x8)	{
 						enable = 1;
-					} else if (Rxmsg.DATA[0] == 0x9)	{
+					} else if (pNode.message == 0x9)	{
 		 				enable = 0;
 					}
 				}
