@@ -35,6 +35,8 @@
 //	Forever main:
 int main()	{
 
+	int currentFloor;
+
 	//	Create a pointer to node and initialize the queue.
 	Node *pNode;
 	initialQueue();
@@ -47,9 +49,11 @@ int main()	{
 
 	//	Send elevator to floor one upon start.
 	pcanTx(ID, FLOOR_1);
+	currentFloor = FLOOR_1;
 
 	//	Loop forever.
 	for (;;)	{
+
 		//	Get CAN bus message.
 		Rxmsg = pcanRx(1);
 
@@ -63,9 +67,26 @@ int main()	{
 		//	Check if queue is empty. If not empty process message.
 		//	If queue is empty returns non zero.
 		if(isQueueEmpty() == 0)	{
-			
-
-
+			switch (pNode.senderId)	{
+				case :
+				break;
+				case:
+				break;
+				case
+			}
+		} else {
+			// No requests, elevator idle.
+			printf("\nElevator idle.");
+			switch (currentFloor)	{
+				case FLOOR_1	:
+				 	printf("\nCurrently on floor 1.\n");
+				 	break;
+				case FLOOR_2	:
+					printf("\nCurrently on floor 2.\n");
+					break;
+				case FLOOR_3	:
+					printf("\nCurrently on floor 3.\n");
+			}
 		}
 	}
 }
