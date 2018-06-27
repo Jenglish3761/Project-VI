@@ -70,6 +70,7 @@ int main()	{
 				do {
 					get_CAN_message();
 				} while(Rxmsg.DATA[0] != pNode.messages);
+				pNode = deQueue();	//	Remove from queue after processing.
 
 			} else if (pNode.senderId > currentFloor)	{	//	Up request has been recieved.
 				//	Move elevator to requested floor.
@@ -78,6 +79,7 @@ int main()	{
 				do {
 					get_CAN_message();
 				} while(Rxmsg.DATA[0] != pNode.messages);
+				pNode = deQueue();	//	Remove from queue after processing.
 
 			}
 
