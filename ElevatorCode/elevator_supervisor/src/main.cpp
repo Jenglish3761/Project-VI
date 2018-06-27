@@ -1,7 +1,14 @@
+/*
+	FILE:			main.cpp (for elevator project)
+	AUTHOR:		Alex Bradley & Michael Wright
+	DATE:			June 26, 2018
+	PURPOSE:	To provide logic and control for elevator.
+*/
+
+//	Libraries:
 #include "../include/pcanFunctions.h"
 #include "../include/databaseFunctions.h"
 #include "../include/mainFunctions.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdlib.h>
@@ -17,13 +24,15 @@
 #include "queue.h"
 #include "node.h"
 
+
+//	Constants:
 #define MOTOR_ID	0x101
 #define FLOOR_1		0x5
 #define FLOOR_2		0x6
 #define FLOOR_3		0x7
 
 
-
+//	Forever main:
 int main()	{
 
 	//	Create a pointer to node and initialize the queue.
@@ -54,6 +63,15 @@ int main()	{
 		//	Check if queue is empty. If not empty process message.
 		//	If queue is empty returns non zero.
 		if(isQueueEmpty() == 0)	{
+			
+
+
+		}
+	}
+}
+
+//	Old Code:
+/*
 			printf("Enabled = 1, Disabled = 0  :  %d", enable);
 			if ((int)pNode.senderId != MOTOR_ID)	{
 				if(enable == 1)	{
@@ -86,6 +104,4 @@ int main()	{
 					}
 				}
 			}
-		}
-	}
-}
+*/
