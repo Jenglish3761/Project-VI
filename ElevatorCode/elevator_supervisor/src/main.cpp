@@ -1,7 +1,7 @@
 /*
-	FILE:			main.cpp (for elevator project)
+	FILE:		main.cpp (for elevator project)
 	AUTHOR:		Alex Bradley & Michael Wright
-	DATE:			June 26, 2018
+	DATE:		June 26, 2018
 	PURPOSE:	To provide logic and control for elevator.
 */
 
