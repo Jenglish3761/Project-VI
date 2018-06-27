@@ -360,6 +360,7 @@
 			<li>Add queue code to elevator supervisor.</li>
 			<li>Add new CAN messages to queue.</li>
 			<li>Read CAN messages from queue instead of directly from RxMsg.</li>
+			<li>Creating finite state machine on elevator supervisor.</li>
 		</ul>
 
 		<h5 class='day'>Wednesday June 27, 2018:</h5>
