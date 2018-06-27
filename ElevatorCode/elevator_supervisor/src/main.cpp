@@ -101,7 +101,6 @@ int main()	{
 }
 
 //	Functions:
-
 //	Reads CAN bus, adds messages to queue and updates current floor.
 void get_CAN_message(void)	{
 	//	Get CAN bus message.
