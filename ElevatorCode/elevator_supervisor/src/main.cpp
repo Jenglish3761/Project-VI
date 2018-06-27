@@ -117,7 +117,7 @@ void get_CAN_message(void)	{
 	} else {
 		// Message is current floor update.
 		// Do not add to queue, update currentFloor.
-		currentFloor = Rxmsg.DATA[0];
+		currentFloor = (unsigned char) Rxmsg.DATA[0];
 	}
 }
 
