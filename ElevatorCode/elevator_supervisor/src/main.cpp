@@ -24,18 +24,19 @@
 #include "queue.h"
 #include "node.h"
 
-
 //	Constants:
 #define MOTOR_ID	0x101
 #define FLOOR_1		0x5
 #define FLOOR_2		0x6
 #define FLOOR_3		0x7
 
+//	Prototypes:
+void get_CAN_message(void);
 
 //	Forever main:
 int main()	{
 
-	int currentFloor;
+	unsigned char currentFloor;
 
 	//	Create a pointer to node and initialize the queue.
 	Node *pNode;
@@ -54,25 +55,10 @@ int main()	{
 	//	Loop forever.
 	for (;;)	{
 
-		//	Get CAN bus message.
-		Rxmsg = pcanRx(1);
-
-		//	Check if message is floor update.
-		if(Rxmsg.ID != MOTOR_ID)	{
-			// 	Add new message to queue.
-			pNode = (link)malloc(sizeof(node));
-			pNode.senderId = Rxmsg.ID
-			pNode.recieverId = 0x100;
-			pNode.message = Rxmsg.DATA[0];
-			addToQueue(pNode);
-		} else {
-			// Message is current floor update.
-			// Do not add to queue, update currentFloor.
-			currentFloor = Rxmsg.DATA[0];
-		}
+		get_CAN_message();
 
 		//	Check if queue is empty. If not empty process message.
-		//	If queue is empty returns non zero.
+		//	isQueueEmpty() returns non zero if queue is empty.
 		if(isQueueEmpty() == 0)	{
 
 			//	Exclude if senderId == currentFloor (does not need to move if
@@ -80,10 +66,18 @@ int main()	{
 			if(pNode.senderId < currentFloor)	{	//	Down request has been recieved.
 				//	Move elevator to requested floor.
 				pcanTx(ID, pNode.message);
-
+				// Wait for elevator to reach requested floor.
+				do {
+					get_CAN_message();
+				} while(Rxmsg.DATA[0] != pNode.messages);
 
 			} else if (pNode.senderId > currentFloor)	{	//	Up request has been recieved.
 				//	Move elevator to requested floor.
+				pcanTx(ID, pNode.message);
+				// Wait for elevator to reach requested floor.
+				do {
+					get_CAN_message();
+				} while(Rxmsg.DATA[0] != pNode.messages);
 
 			}
 
@@ -101,6 +95,28 @@ int main()	{
 					printf("\nCurrently on floor 3.\n");
 			}
 		}
+	}
+}
+
+//	Functions:
+
+//	Reads CAN bus, adds messages to queue and updates current floor.
+void get_CAN_message(void)	{
+	//	Get CAN bus message.
+	Rxmsg = pcanRx(1);
+
+	//	Check if message is floor update.
+	if(Rxmsg.ID != MOTOR_ID)	{
+		// 	Add new message to queue.
+		pNode = (link)malloc(sizeof(node));
+		pNode.senderId = Rxmsg.ID
+		pNode.recieverId = 0x100;
+		pNode.message = Rxmsg.DATA[0];
+		addToQueue(pNode);
+	} else {
+		// Message is current floor update.
+		// Do not add to queue, update currentFloor.
+		currentFloor = Rxmsg.DATA[0];
 	}
 }
 
