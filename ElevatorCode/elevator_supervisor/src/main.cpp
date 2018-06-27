@@ -25,6 +25,7 @@ int main()	{
 	//	Create a pointer to node and initialize the queue.
 	Node *pNode;
 	initialQueue();
+	int result = 0;
 
 	//	Set up can.
 	TPCANMsg Rxmsg;
@@ -35,6 +36,20 @@ int main()	{
 	//	Loop forever.
 	for (;;)	{
 		Rxmsg = pcanRx(1);
+
+		// Add new message to queue.
+		pNode = (link)malloc(sizeof(node));
+		pNode.senderId = Rxmsg.ID
+		pNode.recieverId = 0x100;
+		pNode.message = Rxmsg.DATA[0];
+		addToQueue(pNode);
+
+		//	Check if queue is empty. If not empty process message.
+		if(isQueueEmpty() == 0)	{
+			
+		}
+
+
 		printf("Enabled = 1, Disabled = 0  :  %d", enable);
 		if ((int)Rxmsg.ID != MOTOR_ID)
 		{
