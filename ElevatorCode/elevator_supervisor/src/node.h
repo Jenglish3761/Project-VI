@@ -13,7 +13,7 @@ struct message  {
   int senderId;
   int recieverId;
   unsigned char message;
-}
+};
 
 typedef struct message Message;
 typedef struct node *link;
@@ -21,4 +21,4 @@ typedef struct node *link;
 struct node {
   link pNext;
   Message msg;
-}
+};

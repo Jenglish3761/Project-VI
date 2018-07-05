@@ -1,3 +1,5 @@
+// Run from command line with jjs example1.js
+
 var today = new Date();
 var hourNow = today.getHours();
 var greeting;
@@ -11,4 +13,4 @@ if (hourNow > 18){
 } else {
   greeting = 'Welcome';
 }
-document.write('<h3>' + greeting + '<h3>'');
+print(greeting);
