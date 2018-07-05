@@ -1,7 +1,7 @@
 var el;
 
 function charCount(e)  {
-  var textEntered, charCount, charDisplay, lastkey;
+  var textEntered, counter, charDisplay, lastkey;
   textEntered = document.getElementById('message').value;
   charDisplay = document.getElementById('charactersLeft');
 
@@ -13,4 +13,4 @@ function charCount(e)  {
 }
 
 el = document.getElementById('message');
-el = addEventListeners('keypress', charcount, false);
+el.addEventListeners('keypress', charCount, false);
