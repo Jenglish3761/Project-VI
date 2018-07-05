@@ -1,8 +1,16 @@
 var el;
 
-function charCount(el)  {
-  var textEntered, charCount, display, lastKey;
+function charCount(e)  {
+  var textEntered, charCount, charDisplay, lastkey;
   textEntered = document.getElementById('message').value;
-  display = document.getElementById('charsLeft');
-  
+  charDisplay = document.getElementById('charactersLeft');
+
+  counter = (180 - (textEntered.length));
+  charDisplay.innerHTML = 'Characters remaining: ' + counter;
+
+  lastkey = document.getElementById('lastkey');
+  lastkey.innerHTML = 'Last key input: ' + String.fromCharCode(e.keyCode)
 }
+
+el = document.getElementById('message');
+el = addEventListeners('keypress', charcount, false);
