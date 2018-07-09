@@ -368,6 +368,7 @@
 		<ul>
 			<li>Added logout page to website.</li>
 			<li>Added logout button to kill session.</li>
+			<li>Finished Software Engineering assignment 1.</li>
 		</ul>
 
 		<h5 class='day'>Thursday June 28, 2018:</h5>
@@ -398,6 +399,7 @@
 		<h5 class='day'>Wednesday July 4, 2018:</h5>
 		<ul>
 			<li>DataComm midterm.</li>
+			<li>Studying for Software Engineering midterm.</li>
 		</ul>
 
 		<h5 class='day'>Thursday July 5, 2018:</h5>
