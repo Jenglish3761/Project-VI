@@ -377,7 +377,7 @@
 
 		<h5 class='day'>Friday June 29, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Continued to update request access page to add to .json database and mysql database.</li>
 		</ul>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
@@ -407,7 +407,7 @@
 
 		<h5 class='day'>Friday July 6, 2018:</h5>
 		<ul>
-			<li>Software Engineering midter.</li>
+			<li>Software Engineering midterm.</li>
 		</ul>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
@@ -416,7 +416,9 @@
 
 		<h5 class='day'>Monday July 9, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Updated logbook.</li>
+			<li>Updated status report.</li>
+			<li>Updated Gantt chart.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday July 10, 2018:</h5>
