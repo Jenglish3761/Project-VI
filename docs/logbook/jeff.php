@@ -461,7 +461,7 @@
 			<h3>Monday June,25/2018</h3>
 
 				<ul>
-					<li></li>
+					<li>implemented MySQLdb (python2) for database communication in python environment</li>
 					
 
 
@@ -470,15 +470,20 @@
 			<h3>Tuesday June,26/2018</h3>
 
 				<ul>
-					<li></li>
-					<li></li>
+					<li>began grabbing linux drivers for python to can and importing python can modules</li>
+					
 				</ul>
 
 			<h3>Wednesday June,27/2018</h3>
 
 				<ul>
-					<li></li>
-					<li></li>
+					<li>imported python-can, socket, MySQLdb, mysql-connect</li>
+					<li>trying to find best fit for environment (python 2 or 3)</li>
+					<ul>
+						<li>python2 - supports python-can and MySQLdb</li>
+						<li>python3 - supports socket (forcan communication) and mysql-connect</li>
+					</ul>
+					<li>trying to use python3 as it will be used in the future</li>
 					
 
 				</ul>
@@ -486,14 +491,14 @@
 			<h3>Thursday June,28/2018</h3>
 
 				<ul>
-					<li></li>
+					<li>continue reading documentation for using sockets to communicate with can-bus in python3</li>
 
 				</ul>
 
 			<h3>Friday June,29/2018</h3>
 
 				<ul>
-					<li></li>
+					<li>Off</li>
 
 				</ul>
 
@@ -512,7 +517,120 @@
 
 
 				</ul>
+		<h2 id="week9">Week 9</h2>
 
+			<h3>Monday July,2/2018</h3>
+
+				<ul>
+					<li>Off</li>
+					
+
+
+				</ul>
+
+			<h3>Tuesday July,3/2018</h3>
+
+				<ul>
+					<li>switched to python2, python-can seems easier to use</li>
+					<li>trying to find what python-can calls the USB2CAN interface</li> 
+					
+				</ul>
+
+			<h3>Wednesday July,4/2018</h3>
+
+				<ul>
+					<li>tested new driver with its test send program</li>
+					<li>discovered online python-can interface... bustype="pcan" channel="PCAN_USBBUS1"</li>
+					<li>can now send messages onto the bus</li>
+
+				</ul>
+
+			<h3>Thursday July,5/2018</h3>
+
+				<ul>
+					<li>can messages now get pulled off the bus and stored into a MySQL database (id and message)</li>
+					<li>messages also get forwarded to elevator controller to move elevator w/ no control</li>
+				</ul>
+
+			<h3>Friday July,6/2018</h3>
+
+				<ul>
+					<li>implemented a basic control loop to check a database for current floor and next floor and will not send a new command if in transit</li>
+
+				</ul>
+
+			<h3>Saturday July,7/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+
+			<h3>Sunday July,8/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+		
+		<h2 id="week10">Week 10</h2>
+
+			<h3>Monday July,9/2018</h3>
+
+				<ul>
+					<li></li>
+					
+
+
+				</ul>
+
+			<h3>Tuesday July,10/2018</h3>
+
+				<ul>
+					<li></li>
+					
+				</ul>
+
+			<h3>Wednesday July,11/2018</h3>
+
+				<ul>
+					<li></li>
+					
+					
+
+				</ul>
+
+			<h3>Thursday July,12/2018</h3>
+
+				<ul>
+					<li></li>
+
+				</ul>
+
+			<h3>Friday July,13/2018</h3>
+
+				<ul>
+					<li></li>
+
+				</ul>
+
+			<h3>Saturday July,14/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+
+			<h3>Sunday July,15/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
 	
 
 
