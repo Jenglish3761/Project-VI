@@ -366,12 +366,13 @@
 
 		<h5 class='day'>Wednesday June 27, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Added logout page to website.</li>
+			<li>Added logout button to kill session.</li>
 		</ul>
 
 		<h5 class='day'>Thursday June 28, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Updated request access page to add to .json database and mysql database.</li>
 		</ul>
 
 		<h5 class='day'>Friday June 29, 2018:</h5>
@@ -385,27 +386,28 @@
 
 		<h5 class='day'>Monday July 2, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Holiday Monday.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday July 3, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Studying for DataComm midterm.</li>
+			<li>Studying for Software Engineering midterm.</li>
 		</ul>
 
 		<h5 class='day'>Wednesday July 4, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>DataComm midterm.</li>
 		</ul>
 
 		<h5 class='day'>Thursday July 5, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Studying for Software Engineering.</li>
 		</ul>
 
 		<h5 class='day'>Friday July 6, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Software Engineering midter.</li>
 		</ul>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
