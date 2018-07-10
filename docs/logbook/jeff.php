@@ -44,6 +44,8 @@
 					<li><a href="#week6">Week 6</a></li>
 					<li><a href="#week7">Week 7</a></li>
 					<li><a href="#week8">Week 8</a></li>
+					<li><a href="#week9">Week 9</a></li>
+					<li><a href="#week10">Week 10</a></li>
 				</ul>
 		</ul>
 
@@ -580,7 +582,7 @@
 			<h3>Monday July,9/2018</h3>
 
 				<ul>
-					<li></li>
+					<li>python program now pulls messages from a MySQL database functioning as a queue (no checking)</li>
 					
 
 
