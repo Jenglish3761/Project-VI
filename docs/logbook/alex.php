@@ -12,7 +12,7 @@ require '../../html/navbar.html';
  ?>
 	<body class="container">
 
-		<h1>Alexander's logbook</h1>
+		<h1>Alexander Bradley - Logbook</h1>
 
 		<figure>
 			<img src="../img/alex.jpg" alt="alex">
@@ -239,7 +239,6 @@ require '../../html/navbar.html';
 			<ul>
 				<li>Biology Midterm</li>
 				<li>Started authentication for log-in page</li>
-				
 			</ul>
 		<h3>June,20/2018</h3>
 			<ul>
@@ -259,6 +258,51 @@ require '../../html/navbar.html';
 			<ul>
 				<li>Update website with sessions so elevator control can only be accessed while logged in</li>
 			</ul>
+			<h2>Week 9</h2>
+
+			<h3>June,26/2018</h3>
+				<ul>
+					<li>Go through SW Assignment 1 with Mike G</li>
+					<li>Go through Data Assignment 3 with Mike G</li>
+				</ul>
+			<h3>June,27/2018</h3>
+				<ul>
+					<li>Start work on Delete function for req_access table</li>
+				</ul>
+			<h3>June,28/2018</h3>
+				<ul>
+					<li>Delete button on each line, will need to finish the actual functional delete from the table</li>
+				</ul>
+			<h3>June,29/2018</h3>
+				<ul>
+					<li>Delete function finished, still a couple kinks to work out. (Page refresh)</li>
+				</ul>
+			<h3>July,2/2018</h3>
+				<ul>
+					<li>Holiday No debrief</li>
+				</ul>
+				<h2>Week 10</h2>
+
+				<h3>July,3/2018</h3>
+					<ul>
+						<li>Study for Data-Comms Midterm</li>
+					</ul>
+				<h3>July,4/2018</h3>
+					<ul>
+						<li>Data-Comms Midterm</li>
+					</ul>
+				<h3>July,5/2018</h3>
+					<ul>
+						<li></li>
+					</ul>
+				<h3>July,6/2018</h3>
+					<ul>
+						<li>SW Midterm</li>
+					</ul>
+				<h3>July,9/2018</h3>
+					<ul>
+						<li>End of Phase debrief</li>
+					</ul>
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <p>Copyright &copy 2018 JAM</p>
 </body>

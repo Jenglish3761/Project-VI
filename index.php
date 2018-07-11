@@ -48,9 +48,6 @@ require 'html/navbar.html';
 		<img src="docs/img/jam.jpg" alt="jam">
   </figure>
 
-       		<p><br/><br/></p>
-          <p><a href="/Project-VI/docs/Assignments/assignment1_answers.php">Assignment 1 page</a></p>
-
 
   <p>Copyright &copy 2018 JAM</p>
   </body>

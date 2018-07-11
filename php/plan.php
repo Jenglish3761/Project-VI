@@ -243,7 +243,7 @@
 				<td></td>
 			</tr>
 
-    
+
       <tr>
       <th>Added Bootstrap</th>
       <td></td>
@@ -260,7 +260,7 @@
       <td></td>
       <td></td>
     </tr>
-  
+
     <tr>
     <th>Event Listeners</th>
     <td></td>
@@ -277,7 +277,7 @@
     <td></td>
     <td></td>
   </tr>
-	
+
     <tr>
     <th>Elevator Database</th>
     <td></td>
@@ -311,7 +311,7 @@
     <td></td>
   </tr>
   <tr>
-    <th>Change getinfo using Json </th>
+    <th>Update Elevator control Page </th>
     <td></td>
     <td></td>
     <td></td>
@@ -319,15 +319,44 @@
     <td></td>
     <td></td>
     <td></td>
-    <td class="mw" >MW</td>
-    <td></td>
+    <td class="ab"  colspan="2">AB</td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
-	
+  <tr>
+    <th>Start database work on PI </th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="je" colspan="4" >JE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Add database functionality to website </th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="ab" >AB</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 
 
 		  <tfoot>
