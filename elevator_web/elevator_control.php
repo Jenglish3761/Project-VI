@@ -8,8 +8,7 @@ else{
   header("location: /Project-VI/index.php");
 	exit();
 }
-
-  ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

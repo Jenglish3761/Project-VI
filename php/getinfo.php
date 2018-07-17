@@ -1,14 +1,22 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+}
+else{
+  header("location: /Project-VI/index.php");
+	exit();
+}
+include '../html/navbar.html';
+
+
+ ?>
 <head>
 	<title>GetInfo</title>
 	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<?php
-require '../html/navbar.html';
- ?>
- <br/>
-<body class="container">
 
+ <br/>
 <?php
 $c = 0;
 require_once('mysqli_connect.php'); //open connection to database from link
@@ -31,7 +39,6 @@ if($response){ //if response is not empty print table of values
       	<th scope="col">Last Name			</th>
       	<th scope="col">Email					</th>
       	<th scope="col">Birthdate			</th>
-				<th scope="col">Type					</th>
 				<th scope="col">Date Entered	</th>
 				<th scope="col">User					</th>
 				<th scope="col">Password			</th>
@@ -57,7 +64,6 @@ if($response){ //if response is not empty print table of values
 					<td>' . $row['last_name'] . 	'</td>
 					<td>' . $row['email'] . 			'</td>
 					<td>' . $row['birthday'] . 		'</td>
-					<td>' . $row['type'] . 				'</td>
 					<td>' . $row['time'] . 				'</td>
 					<td>' . $row['user'] . 				'</td>
 					<td>' . $row['pass'] . 				'</td>
@@ -98,4 +104,3 @@ function delete(int $c){
 }
 
 ?>
-</body>
