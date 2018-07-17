@@ -83,10 +83,6 @@ else{
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>Placeholder</p>
-      </div>
-      <div class="well">
-        <p>Placeholder</p>
       </div>
     </div>
   </div>

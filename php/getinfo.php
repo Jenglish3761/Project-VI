@@ -99,10 +99,10 @@ function delete(int $c){
 	$stmt->execute();
 
 	//	Get json data.
-	//$data = file_get_contents('../json/login.json');
+	$data = file_get_contents('../json/login.json');
 	//	Decode into json array.
-	//$json_arr = json_decode($data, true);
-	//unset(json_arr[$c]);
+	$json_arr = json_decode($data, true);
+	unset(json_arr[$c]);
 }
 
 ?>
