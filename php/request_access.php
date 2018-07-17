@@ -1,4 +1,5 @@
-<?php session_start(); ?>
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +46,7 @@
       </div>
     </div>
     <!--...To here, is one input-->
-
+    <!--
     <div class="form-check form-check-inline">
       <label for="first" class="control-label col-sm-2" >Request Type:</label>
       <input id="inlineRadio1" class="form-check-input" type="radio" name="type"  value="F">
@@ -53,7 +54,7 @@
       <input id="inlineRadio2" class="form-check-input" type="radio" name="type"  value="S">
         <label class="form-check-label" for="inlineRadio2">Student</label>
       </div>
-
+    -->
       <h2>Create Username and Password</h2>
 
         <div class="form-group">

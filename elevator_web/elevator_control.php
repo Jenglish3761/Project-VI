@@ -8,8 +8,7 @@ else{
   header("location: /Project-VI/index.php");
 	exit();
 }
-
-  ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,10 +83,13 @@ else{
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
+<<<<<<< HEAD
         <p id="queue"></p>
       </div>
       <div class="well">
         <p>Placeholder</p>
+=======
+>>>>>>> 310247081b98b2c4d5092227277edc498df8c0ad
       </div>
     </div>
   </div>
