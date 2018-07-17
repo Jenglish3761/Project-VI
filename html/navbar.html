@@ -75,8 +75,8 @@ window.onload=startTime();
   function startTime(){
     var time = new Date();
     var h = time.getHours();
-    var m = time.getMinutes();
-    var s = time.getSeconds();
+    var m = time.getMinutes();    if(m<10){m="0" + m;}
+    var s = time.getSeconds();    if(s<10){s="0" + s}
     document.getElementById("time").innerHTML = "JAM PROJECT WEBSITE: " + h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
   }
