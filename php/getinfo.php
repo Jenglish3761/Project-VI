@@ -54,6 +54,7 @@ if($response){ //if response is not empty print table of values
 			$c =$row['id'];
 			if(isset($_POST['delete'.$c.''])){
 				delete($c);
+				deleteJson($c);
 				header("Refresh:0");
 			}
 			echo//Display table
@@ -84,7 +85,22 @@ echo '</form>';
 mysqli_close($dbc);
 
 
+function deleteJson(int $index) {
 
+	//  Get json data.
+	$data = file_get_contents('../json/login.json');
+
+	//	Decode into json array.
+	$json_arr = json_decode($data, true);
+
+	//	Unset based on index.
+	foreach ($index as $i)	{
+		unset($json_arr[$c]);
+	}
+
+	//	Save json file.
+	file_put_contents('../json/login.json', json_encode($json_arr));
+}
 
 
 function delete(int $c){
