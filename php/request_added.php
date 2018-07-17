@@ -57,26 +57,21 @@ require '../html/navbar.html';
         $pass = trim($_POST['pass']);
       }
 
-      /*if(empty($_POST['type'])){ //checks if type was enetered
+      if(empty($_POST['type'])){ //checks if type was enetered
         $data_missing[] = 'Type';
 
       } else{
         $type = trim($_POST['type']);
-      }*/
+      }
 
 
       if(empty($data_missing)){ //if no data was missing get ready to send to MySQL
 
-<<<<<<< HEAD
         $dbc = new mysqli("localhost","ese","pi", "pi_elevator"); //opens a database connection
         $query = "INSERT INTO req_access (first_name, last_name, email, birthday, type, user, pass, id) VALUES (?,?,?,?,?,?,?,NULL)"; //sets our query
-=======
-        $dbc = new mysqli("localhost","root", "", "elevator"); //opens a database connection
-        $query = "INSERT INTO req_access (first_name, last_name, email, birthday, user, pass, id) VALUES (?,?,?,?,?,?,NULL)"; //sets our query
->>>>>>> 310247081b98b2c4d5092227277edc498df8c0ad
 
         $stmt = $dbc->prepare($query); //set statement to prepare to send
-        $stmt->bind_param("ssssss",$f_name, $l_name, $email, $birthday, $user, $pass);
+        $stmt->bind_param("sssssss",$f_name, $l_name, $email, $birthday, $type, $user, $pass);
 
         $stmt->execute();
 
