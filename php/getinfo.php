@@ -1,17 +1,25 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+}
+else{
+  header("location: /Project-VI/index.php");
+	exit();
+}
+include '../html/navbar.html';
+
+
+ ?>
 <head>
 	<title>GetInfo</title>
 	<link rel="stylesheet" type="text/css" href="../css/project_style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<?php
-require '../html/navbar.html';
- ?>
- <br/>
-<body class="container">
 
+ <br/>
 <?php
 $c = 0;
-$dbc = new mysqli("localhost","ese","pi", "pi_elevator"); //opens a database connection
+require_once('mysqli_connect.php'); //open connection to database from link
 
 $query = "SELECT*FROM req_access";
 //$query = "SELECT first_name, last_name, email, birthday, type, time ,user ,pass FROM req_access"; //set query to grab data from req_access table
@@ -31,7 +39,6 @@ if($response){ //if response is not empty print table of values
       	<th scope="col">Last Name			</th>
       	<th scope="col">Email					</th>
       	<th scope="col">Birthdate			</th>
-				<th scope="col">Type					</th>
 				<th scope="col">Date Entered	</th>
 				<th scope="col">User					</th>
 				<th scope="col">Password			</th>
@@ -47,6 +54,7 @@ if($response){ //if response is not empty print table of values
 			$c =$row['id'];
 			if(isset($_POST['delete'.$c.''])){
 				delete($c);
+				deleteJson($c);
 				header("Refresh:0");
 			}
 			echo//Display table
@@ -57,7 +65,6 @@ if($response){ //if response is not empty print table of values
 					<td>' . $row['last_name'] . 	'</td>
 					<td>' . $row['email'] . 			'</td>
 					<td>' . $row['birthday'] . 		'</td>
-					<td>' . $row['type'] . 				'</td>
 					<td>' . $row['time'] . 				'</td>
 					<td>' . $row['user'] . 				'</td>
 					<td>' . $row['pass'] . 				'</td>
@@ -78,7 +85,22 @@ echo '</form>';
 mysqli_close($dbc);
 
 
+function deleteJson(int $index) {
 
+	//  Get json data.
+	$data = file_get_contents('../json/login.json');
+
+	//	Decode into json array.
+	$json_arr = json_decode($data, true);
+
+	//	Unset based on index.
+	foreach ($index as $i)	{
+		unset($json_arr[$c]);
+	}
+
+	//	Save json file.
+	file_put_contents('../json/login.json', json_encode($json_arr));
+}
 
 
 function delete(int $c){
@@ -87,15 +109,16 @@ function delete(int $c){
 
 	$query = "DELETE FROM req_access WHERE id=$c";
 
-
-
-
 	$stmt = $db->prepare($query);
 	$stmt->bindvalue('del', $c);
 
 	$stmt->execute();
 
+	//	Get json data.
+	//$data = file_get_contents('../json/login.json');
+	//	Decode into json array.
+	//$json_arr = json_decode($data, true);
+	//unset(json_arr[$c]);
 }
 
 ?>
-</body>
