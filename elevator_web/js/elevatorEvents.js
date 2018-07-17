@@ -1,5 +1,7 @@
 window.onload=showFloorInterval(750);
+
 window.onload=showFloor();
+
 
 function showFloor(){
 
@@ -24,6 +26,8 @@ function showFloor(){
 		request.open("GET", "/Project-VI/elevator_web/getfloor.php?q=", true);
 		request.send();
 }
+
+
 
 function showFloorInterval(millisec) {
     setInterval(showFloor, millisec);

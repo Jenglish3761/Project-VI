@@ -11,7 +11,7 @@ require '../html/navbar.html';
 
 <?php
 $c = 0;
-require_once('mysqli_connect.php'); //open connection to database from link
+$dbc = new mysqli("localhost","ese","pi", "pi_elevator"); //opens a database connection
 
 $query = "SELECT*FROM req_access";
 //$query = "SELECT first_name, last_name, email, birthday, type, time ,user ,pass FROM req_access"; //set query to grab data from req_access table

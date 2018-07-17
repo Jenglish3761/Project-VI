@@ -67,7 +67,7 @@ require '../html/navbar.html';
 
       if(empty($data_missing)){ //if no data was missing get ready to send to MySQL
 
-        $dbc = new mysqli("localhost","root", "", "elevator"); //opens a database connection
+        $dbc = new mysqli("localhost","ese","pi", "pi_elevator"); //opens a database connection
         $query = "INSERT INTO req_access (first_name, last_name, email, birthday, type, user, pass, id) VALUES (?,?,?,?,?,?,?,NULL)"; //sets our query
 
         $stmt = $dbc->prepare($query); //set statement to prepare to send

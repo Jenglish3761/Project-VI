@@ -84,7 +84,7 @@ else{
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>Placeholder</p>
+        <p id="queue"></p>
       </div>
       <div class="well">
         <p>Placeholder</p>
@@ -99,21 +99,23 @@ else{
 
 </body>
 <script src="js/elevatorEvents.js"></script>
+<script src="js/test.js"></script>
 </html>
 
 <?php
 //Check what button is pressed and update lights
 	if(isset($_POST['Floor1'])){
-		$curflr = update(1);
+		//$curflr = update(1);
+		$curflr = moveElev(5);
 
 	}
 	if(isset($_POST['Floor2'])){
-		$curflr = update(2);
-
+		//$curflr = update(2);
+		$curflr = moveElev(6);
 	}
 	if(isset($_POST['Floor3'])){
-		$curflr = update(3);
-
+		//$curflr = update(3);
+		$curflr = moveElev(7);
 	}
 
 
@@ -126,7 +128,7 @@ else{
 
 	function update(int $newfloor): int{
 
-		$db = new PDO('mysql:host=127.0.0.1;dbname=elevator', 'root', '');//open database
+		$db = new PDO('mysql:host=127.0.0.1;dbname=elevator', 'ese', 'pi');//open database
 
 		$query = 'UPDATE info SET current = :new WHERE ref = 1';//set query to update current floor
 
@@ -136,6 +138,19 @@ else{
 		$stmt->execute();
 
 		return $newfloor;
+	}
+	function moveElev(int $newfloor): int{
+		$db = new PDO('mysql:host=127.0.0.1;dbname=pi_elevator', 'ese', 'pi');//open database
+	
+		$query = 'INSERT INTO can_data(id,message) VALUES(100,' . $newfloor . ')';//set query to update current floor
+		
+		$stmt = $db->prepare($query);
+		$stmt->bindvalue('new', $newfloor);
+
+		$stmt->execute();
+
+		return $newfloor;
+	
 	}
 
 ?>

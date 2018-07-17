@@ -8,7 +8,7 @@
 		<meta http-equiv="author" content="JAM" />
 		<meta http-equiv="pragma" content="no-cache" /> <!-- want browser to reload this page every time -->
 	</head>
-	<?
+	<?php
 	require '../html/navbar.html';
 	?>
 	<link rel="stylesheet" type="text/css" href="../css/project_details_style.css">
