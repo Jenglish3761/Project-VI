@@ -87,14 +87,16 @@ function delete(int $c){
 
 	$query = "DELETE FROM req_access WHERE id=$c";
 
-
-
-
 	$stmt = $db->prepare($query);
 	$stmt->bindvalue('del', $c);
 
 	$stmt->execute();
 
+	//	Get json data.
+	$data = file_get_contents('../json/login.json');
+	//	Decode into json array.
+	$json_arr = json_decode($data, true);
+	unset(json_arr[$c]);
 }
 
 ?>
