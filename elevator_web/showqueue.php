@@ -18,19 +18,17 @@ if($rows){ //if response is not empty print table of values
 				<th scope="col">ID						</th>
       	<th scope="col">Message	     	</th>
     	</tr>
-  	</thead>
-		';
+  	</thead>';
 
 
 
 	echo '<tbody>';
 		while($row = mysqli_fetch_array($rows)){ //while data is pulled fill table rows
 			echo//Display table
-				'<tr>
-					<td>' . $row[0] . 	'</td>
-					<td>' . $row[1] . 	'</td>';
-			echo '</tr>';
-
+			'<tr>
+			 <td>' . $row[0] . 	'</td>
+		   <td>' . $row[1] . 	'</td>'
+			'</tr>';
 		}
 		echo '</tbody>
 			</table>';
