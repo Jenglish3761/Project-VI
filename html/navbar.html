@@ -74,10 +74,11 @@
 window.onload=startTime();
   function startTime(){
     var time = new Date();
-    var h = time.getHours();
+    var ampm = "";
+    var h = time.getHours();      if(h<12){ampm="am";}else{ampm="pm";}if(h>12){h="0" + h-12;}
     var m = time.getMinutes();    if(m<10){m="0" + m;}
-    var s = time.getSeconds();    if(s<10){s="0" + s}
-    document.getElementById("time").innerHTML = "JAM PROJECT WEBSITE: " + h + ":" + m + ":" + s;
+    var s = time.getSeconds();    if(s<10){s="0" + s;}
+    document.getElementById("time").innerHTML = "JAM PROJECT WEBSITE: " + h + ":" + m + ":" + s + " " + ampm;
     var t = setTimeout(startTime, 500);
   }
 </script>
