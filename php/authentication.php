@@ -40,23 +40,25 @@ $accessGranted = -1;
 foreach ($userArray as $userAndPass) {
   echo "Username: " . $userAndPass["user"] . ", Password: " . $userAndPass["pass"] . "<br />";
   if(strcmp($userAndPass["user"], $_POST['username']) == 0 && strcmp($userAndPass["pass"], $_POST['password']) == 0)  {
-    $accessGranted = 1;
-    setcookie('access', $accessGranted);
-    if($_POST['registered'] == 1){
-      $_SESSION['registered']=$_POST['username'];
-      echo "Access Granted to SuperUser<br/>";
-    }
-    else{
+    if($userAndPass["access"] == 1) {
+      $accessGranted = 1;
+      setcookie('access', $accessGranted);
+
       $_SESSION['username']=$_POST['username'];
-      echo "Access Granted!" . "<br />";
+      "Access Granted!" . "<br />";
+    } else {
+      $registered = 0;
     }
 
-    header('Location: ../index.php');
   }
+
+  header('Location: ../index.php');
+
 }
 if($accessGranted == -1) {
   header('Location: ../php/login_page.php');
   setcookie('access', $accessGranted);
+  setcookie('registered', $registered);
 }
 
 

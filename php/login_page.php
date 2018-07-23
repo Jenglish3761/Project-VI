@@ -15,7 +15,12 @@
   <h2>Please Log in</h2>
   <?php
       if(isset($_COOKIE['access']) && $_COOKIE['access'] == -1)  {
-        echo "<p>" . "Invalid username and password combination!" . "<p>";
+        if(isset($_COOKIE['registered']) && $_COOKIE['registered'] == 0)  {
+          echo "<p>" . "You are not yet registered!" . "<p>";
+        } else {
+          echo "<p>" . "Invalid username and password combination!" . "<p>";
+        }
+
       }
       setcookie('access', 1);
   ?>

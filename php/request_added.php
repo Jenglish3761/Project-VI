@@ -101,6 +101,7 @@ require '../html/navbar.html';
 
 $currentArray["user"] = $_POST['user'];
 $currentArray["pass"] = $_POST['pass'];
+$currentArray["access"] = 0;
 
 $content = file_get_contents('../json/login.json');
 $tempArray = json_decode($content);
