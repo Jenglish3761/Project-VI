@@ -258,51 +258,101 @@ require '../../html/navbar.html';
 			<ul>
 				<li>Update website with sessions so elevator control can only be accessed while logged in</li>
 			</ul>
-			<h2>Week 9</h2>
+		<h2>Week 9</h2>
 
-			<h3>June,26/2018</h3>
-				<ul>
-					<li>Go through SW Assignment 1 with Mike G</li>
-					<li>Go through Data Assignment 3 with Mike G</li>
-				</ul>
-			<h3>June,27/2018</h3>
-				<ul>
-					<li>Start work on Delete function for req_access table</li>
-				</ul>
-			<h3>June,28/2018</h3>
-				<ul>
-					<li>Delete button on each line, will need to finish the actual functional delete from the table</li>
-				</ul>
-			<h3>June,29/2018</h3>
-				<ul>
-					<li>Delete function finished, still a couple kinks to work out. (Page refresh)</li>
-				</ul>
-			<h3>July,2/2018</h3>
-				<ul>
-					<li>Holiday No debrief</li>
-				</ul>
-				<h2>Week 10</h2>
+		<h3>June,26/2018</h3>
+			<ul>
+				<li>Go through SW Assignment 1 with Mike G</li>
+				<li>Go through Data Assignment 3 with Mike G</li>
+			</ul>
+		<h3>June,27/2018</h3>
+			<ul>
+				<li>Start work on Delete function for req_access table</li>
+			</ul>
+		<h3>June,28/2018</h3>
+			<ul>
+				<li>Delete button on each line, will need to finish the actual functional delete from the table</li>
+			</ul>
+		<h3>June,29/2018</h3>
+			<ul>
+				<li>Delete function finished, still a couple kinks to work out. (Page refresh)</li>
+			</ul>
+		<h3>July,2/2018</h3>
+			<ul>
+				<li>Holiday No debrief</li>
+			</ul>
+		<h2>Week 9</h2>
 
-				<h3>July,3/2018</h3>
-					<ul>
-						<li>Study for Data-Comms Midterm</li>
-					</ul>
-				<h3>July,4/2018</h3>
-					<ul>
-						<li>Data-Comms Midterm</li>
-					</ul>
-				<h3>July,5/2018</h3>
-					<ul>
-						<li></li>
-					</ul>
-				<h3>July,6/2018</h3>
-					<ul>
-						<li>SW Midterm</li>
-					</ul>
-				<h3>July,9/2018</h3>
-					<ul>
-						<li>End of Phase debrief</li>
-					</ul>
+		<h3>July,3/2018</h3>
+			<ul>
+				<li>Study for Data-Comms Midterm</li>
+			</ul>
+		<h3>July,4/2018</h3>
+			<ul>
+				<li>Data-Comms Midterm</li>
+			</ul>
+		<h3>July,5/2018</h3>
+			<ul>
+				<li>Cleaned up website a bit. (Made easier to navigate with more links on NavBar)</li>
+			</ul>
+		<h3>July,6/2018</h3>
+			<ul>
+				<li>SW Midterm</li>
+			</ul>
+		<h3>July,9/2018</h3>
+			<ul>
+				<li>Helped Jeff with dequeuing off of MySQL in a FIFO order. No checking if queue is empty yet</li>
+			</ul>
+		<h2>Week 10</h2>
+
+		<h3>July,10/2018</h3>
+			<ul>
+				<li></li>
+			</ul>
+		<h3>July,11/2018</h3>
+			<ul>
+				<li>To-do list created for final preperations of project</li>
+			</ul>
+		<h3>July,12/2018</h3>
+			<ul>
+				<li></li>
+			</ul>
+		<h3>July,13/2018</h3>
+			<ul>
+				<li></li>
+			</ul>
+		<h3>July,15/2018</h3>
+			<ul>
+				<li>Updated website code to read / write from the database on the PI rather than my local database</li>
+				<li>Added an "empty table" check to the dequeuing function so that it doesnt error out</li>
+				<li>Made the dequeue first look at input from the website over the CAN messages</li>
+			</ul>
+		<h2>Week 11</h2>
+
+		<h3>July,16/2018</h3>
+			<ul>
+				<li>Attempted to fix issue where the elevator will stop dequeuing messages after reading a CAN input, will look at again at a later date</li>
+			</ul>
+		<h3>July,17/2018</h3>
+			<ul>
+				<li>Made a table for the queue to be displayed in, will need to learn how to update a table in an AJAX call with Jeff</li>
+			</ul>
+		<h3>July,18/2018</h3>
+			<ul>
+				<li></li>
+			</ul>
+		<h3>July,19/2018</h3>
+			<ul>
+				<li></li>
+			</ul>
+		<h3>July,20/2018</h3>
+			<ul>
+				<li></li>
+			</ul>
+		<h3>July,23/2018</h3>
+			<ul>
+				<li>End of phase Debrief</li>
+			</ul>
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <p>Copyright &copy 2018 JAM</p>
 </body>
