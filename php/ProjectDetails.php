@@ -95,7 +95,7 @@
 			<tfoot></tfoot>
 		</table>
 		<h2>Status Report</h2>
-		<embed src="../docs/img/EPVI-Weekly-Status-Report_Week8.pdf" width="930" height="500" type='application/pdf' alt="schematic">
+		<embed src="../docs/img/EPVI-Weekly-Status-Report_Week12.pdf" width="930" height="500" type='application/pdf' alt="schematic">
 		<h2>Schematics</h2>
 
 		<h3>Elevator Node</h3>

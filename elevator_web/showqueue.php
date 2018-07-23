@@ -10,7 +10,6 @@ $rows = $db->query('SELECT * FROM can_data');//pull data from database
 
 if($rows){ //if response is not empty print table of values
 	echo '
-  <div class="table-responsive"
   <table class="table responsive">
   	<thead>
     	<tr>
