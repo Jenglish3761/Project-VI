@@ -46,6 +46,14 @@
 					<li><a href="#week8">Week 8</a></li>
 					<li><a href="#week9">Week 9</a></li>
 					<li><a href="#week10">Week 10</a></li>
+					<li><a href="#week11">Week 11</a></li>
+				</ul>
+				<li><a href="#phase3">Phase 3</a></li>
+				<ul>
+					<li><a href="#week12">Week 12</a></li>
+					<li><a href="#week13">Week 13</a></li>
+					<li><a href="#week14">Week 14</a></li>
+					<li><a href="#week15">Week 15</a></li>
 				</ul>
 		</ul>
 
@@ -598,9 +606,7 @@
 			<h3>Wednesday July,11/2018</h3>
 
 				<ul>
-					<li></li>
-					
-					
+					<li>created a "to-do" list of tasks</li>	
 
 				</ul>
 
@@ -614,7 +620,7 @@
 			<h3>Friday July,13/2018</h3>
 
 				<ul>
-					<li></li>
+					<li>Off</li>
 
 				</ul>
 
@@ -627,6 +633,124 @@
 				</ul>
 
 			<h3>Sunday July,15/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+		
+		<h2 id="week11">Week 11</h2>
+
+			<h3>Monday July,16/2018</h3>
+
+				<ul>
+					<li>updated website to display queue of commands from MySQL queue</li>
+					
+
+
+				</ul>
+
+			<h3>Tuesday July,17/2018</h3>
+
+				<ul>
+					<li>rewriting python program to be based on object-oriented notation (/desktop/elevator-py/main.py)</li>
+					<ul>
+						<li>classes include: Db.py and Msg.py</li>
+						<li>each file includes docstrings for description of class, properties, methods...</li>
+					</ul
+				</ul>
+
+			<h3>Wednesday July,18/2018</h3>
+
+				<ul>
+					<li>completed rewrite of python program</li>
+					<li>commented all code and rewrote docstrings</li>
+					
+
+				</ul>
+
+			<h3>Thursday July,19/2018</h3>
+
+				<ul>
+					<li>began creating a testing document for the elevator controls</li>
+
+				</ul>
+
+			<h3>Friday July,20/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+				</ul>
+
+			<h3>Saturday July,21/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+
+			<h3>Sunday July,22/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+		
+		<h2 id="phase3">PHASE 3</h2>
+		<h2 id="week12">Week 12</h2>
+
+			<h3>Monday July,23/2018</h3>
+
+				<ul>
+					<li>End of phase debrief</li>
+					
+
+
+				</ul>
+
+			<h3>Tuesday July,24/2018</h3>
+
+				<ul>
+					<li></li>
+					
+				</ul>
+
+			<h3>Wednesday July,25/2018</h3>
+
+				<ul>
+					<li></li>
+					
+					
+
+				</ul>
+
+			<h3>Thursday July,26/2018</h3>
+
+				<ul>
+					<li></li>
+
+				</ul>
+
+			<h3>Friday July,27/2018</h3>
+
+				<ul>
+					<li></li>
+
+				</ul>
+
+			<h3>Saturday July,28/2018</h3>
+
+				<ul>
+					<li>Off</li>
+
+
+				</ul>
+
+			<h3>Sunday July,29/2018</h3>
 
 				<ul>
 					<li>Off</li>
