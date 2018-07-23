@@ -491,7 +491,7 @@
 		<h5 class='day'>Monday July 23, 2018:</h5>
 		<ul>
 			<li>Updated logbook.</li>
-			<li>Finished modifying 
+			<li>Finished modifying .json files to have and check registered and non registered users.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday July 24, 2018:</h5>
