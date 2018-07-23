@@ -425,22 +425,24 @@
 
 		<h5 class='day'>Tuesday July 10, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Thermodynamics lab.</li>
+			<li>Work at applied research lab.</li>
 		</ul>
 
 		<h5 class='day'>Wednesday July 11, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Work at applied research lab.</li>
 		</ul>
 
 		<h5 class='day'>Thursday July 12, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Work at applied research lab.</li>
+			<li>Studying for math midterm.</li>
 		</ul>
 
 		<h5 class='day'>Friday July 13, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Math midterm #2.</li>
 		</ul>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to Top of Page">Top</button>
@@ -449,27 +451,34 @@
 
 		<h5 class='day'>Monday July 16, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Updated lobook.</li>
+			<li>Updated status report.</li>
+			<li>Updated gantt chart.</li>
+			<li>Work in applied research lab.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday July 17, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Thermodynamics lab.</li>
+			<li>Natural sciences assignment 2.</li>
 		</ul>
 
 		<h5 class='day'>Wednesday July 18, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Modifhing .json file to delete entries.</li>
+			<li>Modifying .json file to have registered and non registered users.</li>
 		</ul>
 
 		<h5 class='day'>Thursday July 19, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Modifhing .json file to delete entries.</li>
+			<li>Modifying .json file to have registered and non registered users.</li>
+			<li>Work at applied research lab.</li>
 		</ul>
 
-		<h5 class='day'>Friday July 10, 2018:</h5>
+		<h5 class='day'>Friday July 20, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Work at applied research lab.</li>
 		</ul>
 
 
@@ -481,7 +490,8 @@
 
 		<h5 class='day'>Monday July 23, 2018:</h5>
 		<ul>
-			<li></li>
+			<li>Updated logbook.</li>
+			<li>Finished modifying .json files to have and check registered and non registered users.</li>
 		</ul>
 
 		<h5 class='day'>Tuesday July 24, 2018:</h5>

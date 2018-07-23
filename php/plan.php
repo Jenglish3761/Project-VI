@@ -335,7 +335,7 @@
     <td></td>
     <td></td>
     <td></td>
-    <td class="je" colspan="4" >JE</td>
+    <td class="je" colspan="2" >JE</td>
     <td></td>
     <td></td>
     <td></td>
@@ -358,6 +358,95 @@
     <td></td>
   </tr>
 
+  <tr>
+    <th>Added database to Pi</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="ab" colspan="">AB</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <th>Add registered users to json database</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="mw" colspan="2">MW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <th>Updated navbar</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="ab" colspan="">AB</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <th>Add delete function for json database</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="mw" colspan="">MW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <th>Re-write elevator code using object oriented in python</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="je" colspan="2">JE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 
 		  <tfoot>
 			  <tr>
