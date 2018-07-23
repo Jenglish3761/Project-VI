@@ -17,6 +17,7 @@
       if(isset($_COOKIE['access']) && $_COOKIE['access'] == -1)  {
         if(isset($_COOKIE['registered']) && $_COOKIE['registered'] == 0)  {
           echo "<p>" . "You are not yet registered!" . "<p>";
+          setcookie('registered', 1);
         } else {
           echo "<p>" . "Invalid username and password combination!" . "<p>";
         }
