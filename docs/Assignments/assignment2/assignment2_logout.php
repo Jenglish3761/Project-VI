@@ -11,4 +11,4 @@ session_destroy();
 <br/>
 <br/>
 <p> You have succesfully logged out!</p>
-<html>
+<html/>
