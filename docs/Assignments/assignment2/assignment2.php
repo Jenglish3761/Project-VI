@@ -15,6 +15,9 @@ require '../../../html/navbar.html';
   <body class='border'>
     <h1>Assignment 2</h1>
     <h2>UML Class Diagram</h2>
+    <a href="php/members.php" class="active" id="register-form-link">Database Section</a>
+  </br>
+
     <embed src="./assignment2_docs/UML_class_diagram.pdf" width="930" height="500" type='application/pdf' alt="UML_Diagram">
 
     <footer>
