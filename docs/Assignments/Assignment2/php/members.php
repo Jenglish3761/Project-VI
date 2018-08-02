@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
 <html>
+<?php require '/opt/lampp/htdocs/Project-VI/html/navbar.html';?>
 <head>
   <meta charset="utf-8">
   <meta name='description' content='Signup page for SW Midterm' />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="../css/log_req_styles.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!--<script src='../js/log_req_func.js'></script>-->
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -17,7 +16,7 @@
 <title>SWQuiz2</title>
 
 </head>
-<?php require '/Project-VI/html/navbar.html';?>
+
 <body>
 <div class="container">
     	<div class="row">
@@ -65,22 +64,22 @@
               <?php
               if(isset($_POST['update1'])){
                 update1($_POST['input']);
-                echo "updated Field1";
+                echo "<p align='center'>updated Field1</p>";
                 displayTable();
               }
               if(isset($_POST['update2'])){
                 update2($_POST['input']);
-                echo "updated Field2";
+                echo "<p align='center'>updated Field2</p>";
                 displayTable();
               }
               if(isset($_POST['update3'])){
                 update3($_POST['input']);
-                echo "updated Field3";
+                echo "<p align='center'>updated Field3</p>";
                 displayTable();
               }
               if(isset($_POST['update4'])){
                 update4($_POST['input']);
-                echo "updated Field4";
+                echo "<p align='center'>updated Field4</p>";
                 displayTable();
               }
 
