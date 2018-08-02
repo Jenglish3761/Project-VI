@@ -98,7 +98,7 @@ require '../html/navbar.html';
   }
 
 
-
+//  Keep this part
 $currentArray["user"] = $_POST['user'];
 $currentArray["pass"] = $_POST['pass'];
 $currentArray["access"] = 0;
