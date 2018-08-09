@@ -16,7 +16,7 @@
       width: 100px;
     }
   </style>
-  <title>SWQuiz2</title>
+  <title>Assignment2</title>
 
 </head>
 
@@ -197,9 +197,6 @@ catch(Exception $e){
   $db->rollback();
   $stmt = $db->prepare($query);
   $stmt->execute();
-  echo '<script>
-  alert("error");
-  </script>';
 }
 
 }
